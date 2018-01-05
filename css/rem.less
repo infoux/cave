@@ -1,0 +1,67 @@
+
+
+.rem( @property, @list, @base: 14) {
+	@n: length(@list);
+
+	// Only convert numbers that are not percentages or 0;
+	._merge( @px ) when ( isnumber(@px) ) and not ( ispercentage(@px) ) and not ( @px = 0 ) {
+		@rem: ( @px / @base );
+		@{property}+_: unit(@rem, rem);
+	}
+	._merge( @px ) when ( default() ) {
+		@{property}+_: @px;
+	}
+
+	._loop( @n ) when ( @n > 0 ) {
+		._loop((@n - 1));
+
+		@val: extract(@list, @n);
+		._merge( @val ); // merges values onto @property with space character.
+	}
+
+	._loop( @n );
+}
+
+
+.remCalc( @property, @list, @base: 14) {
+	@n: length(@list);
+	// Only convert numbers that are not percentages or 0;
+	._merge( @px ) when ( isnumber(@px) ) and not ( ispercentage(@px) ) and not ( @px = 0 ) {
+		@rem: ( @px / @base );
+		@{property}+_: calc(~"100% - "unit(@rem, rem));
+	}
+	._merge( @px ) when ( default() ) {
+		@{property}+_: @px;
+	}
+
+	._loop( @n ) when ( @n > 0 ) {
+		._loop((@n - 1));
+
+		@val: extract(@list, @n);
+		._merge( @val ); // merges values onto @property with space character.
+	}
+
+	._loop( @n );
+}
+
+
+.remCalcH( @property, @list, @base: 14) {
+	@n: length(@list);
+	// Only convert numbers that are not percentages or 0;
+	._merge( @px ) when ( isnumber(@px) ) and not ( ispercentage(@px) ) and not ( @px = 0 ) {
+		@rem: ( @px / @base );
+		@{property}+_: calc(~"50% - "unit(@rem, rem));
+	}
+	._merge( @px ) when ( default() ) {
+		@{property}+_: @px;
+	}
+
+	._loop( @n ) when ( @n > 0 ) {
+		._loop((@n - 1));
+
+		@val: extract(@list, @n);
+		._merge( @val ); // merges values onto @property with space character.
+	}
+
+	._loop( @n );
+}
