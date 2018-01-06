@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   $(".screen button.cave").on("click", function() {
     var switchon = $(this).attr("data");
+    
     $(".screen button.cave").removeClass("active");
     $(".screen button."+ switchon).addClass("active");
 
