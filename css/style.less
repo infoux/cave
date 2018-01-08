@@ -752,6 +752,7 @@ body.sub {
             nav {
                 .none;
                 .fixed;
+                z-index:999;
                 .center;
                 .rem(top, 45);
                 left:0;
@@ -823,6 +824,377 @@ body.sub {
             }
 
         }
+    }
+
+    #content {
+      article.issue {
+        .block;
+        .rem(height, 222);
+        .center;
+        background:url("../images/main-bg.jpg") no-repeat center / cover;
+
+        @media all and (min-width: 1200px) {
+          height:760px;
+        }
+
+        .container {
+          color:#fff;
+          .center;
+          
+          ul {
+            .mapazero;
+            .no-list;
+
+            li {
+              h2 {
+                .rem(font-size, 17);
+                .rem(margin, 38 0);
+
+                @media all and (min-width: 1200px) {
+                  font-size:35px;
+                  margin:68px;
+                }
+
+              }
+              div.nowdata {
+                p {
+                  display: inline-block;
+                  .top;
+                  color: #00aeea;
+                  .rem(margin, 0 14 0 0);
+
+
+                  @media all and (min-width: 1200px) {
+                    width:248px;
+                    height:248px;
+                    border:16px solid #00aeea;
+                    border-radius:50%;
+                    font-size:22px;
+                    padding:50px 0;
+                    
+                  }
+
+                  &:first-of-type {
+                      color: #efb001;
+                      border-color: #efb001;
+                  }
+
+                  &:last-of-type {
+                      .rem(margin, 0);
+                      color: #a8c200;
+                      border-color: #a8c200;
+                  }
+
+                  strong {
+                      .block;
+                      .rem(margin, 4 0 0);
+                      .rem(font-size, 26);
+
+                      @media all and (min-width: 1200px) {
+                        margin:10px 0 0;
+                        font-size:42px;
+                      }
+
+                      u {
+                          text-decoration: none;
+                          .rem(font-size, 10);
+                          .normal;
+
+                          @media all and (min-width: 1200px) {
+                            font-size:20px;
+                          }
+                      }
+                  }
+
+                  i {
+                      .none;
+                      @media all and (min-width: 1200px) {
+                        .inline-block;
+                        font-size:14px;
+                        color:#666;
+                        font-style:normal;
+                      }
+                  }
+                }
+              }
+
+            }
+          }
+          div.map {
+            .none;
+            @media all and (min-width: 1200px) {
+              .block;
+              .relative;
+              width:1200px;
+              height:250px;
+              margin:50px 0 0;
+              background:url("../images/web-map.png") no-repeat center / 100% 100%;
+
+
+              button {
+                .block;
+                .absolute;
+                left: 0;
+                top: 0;
+                border: none;
+                background: none;
+                color: @white;
+                font-size: 18px;
+                outline: none;
+
+                &.cave01 {
+                    /* 당처물굴 */
+                    left: 1104px;
+                    top: 166px;
+                }
+
+                &.cave02 {
+                    /* 용천굴 */
+                    left: 1010px;
+                    top: 171px;
+                }
+
+                &.cave03 {
+                    /* 김녕굴 */
+                    left: 878px;
+                    top: 171px;
+                }
+
+                &.cave04 {
+                    /* 만장굴 */
+                    left: 788px;
+                    top: 206px;
+                }
+
+                &.cave05 {
+                    /* 벵뒤굴 */
+                    left: 234px;
+                    top: 92px;
+                }
+
+                &::before {
+                    content: "";
+                    .block;
+                    .absolute;
+                    .drop-shadow(0, 3px, 0, 0, 0.8);
+                    left: -10px;
+                    top: -40px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: #669900;
+                    border: 0.3em solid rgba(0,0,0,0.5);
+                }
+
+                &.alert {
+                    &::before {
+                        background: #cc0033;
+                        animation: blinker 0.6s linear infinite;
+                    }
+                    @keyframes blinker {
+                        50% {
+                            opacity: 0.4;
+                        }
+                    }
+                }
+
+                &.active {
+                    &::before {
+                        background: #0055b5;
+                    }
+                }
+
+            }
+
+            }
+          }
+
+          button.btn {
+            .block;
+            .absolute;
+            .rem(top, 30);
+            .zero;
+            .mapazero;
+            background:#000;
+            border:none;
+            .rem(width, 30);
+            .rem(height, 30);
+            border-radius:50%;
+
+            @media all and (min-width: 1200px) {
+              width:39px;
+              height:39px;
+              top:66px;
+            }
+
+
+            &.issuePrev {
+              .rem(left, 10);
+
+              @media all and (min-width: 1200px) {
+                left:50%;
+                margin-left:-160px;
+              }
+            }
+
+            &.issueNext {
+              .rem(right, 10);
+
+              @media all and (min-width: 1200px) {
+                left:50%;
+
+                margin-left:121px;
+                right:auto;
+              }
+            }
+
+            i {
+              .rem(font-size, 20);
+              color:#fff;
+            }
+          }
+
+        }
+      }
+
+      div.main-info {
+        .center;
+        .container {
+
+          @media all and (min-width: 1200px) {
+            .zero;
+            margin-bottom:40px;
+          }
+          section.notice {
+
+            @media all and (min-width: 1200px) {
+              .inline-block;
+              width:570px;
+              margin-right:50px;
+            }
+
+            h2 {
+              .mapazero;
+              a {
+                .block;
+                .rem(font-size, 17);
+                .rem(padding, 20 0 14);
+                @media all and (min-width: 1200px) {
+                  font-size:25px;
+                  padding:40px 0 30px;
+                }
+              }
+            }
+            ul {
+              .mapazero;
+              .no-list;
+              
+              border-top:1px solid #d9d9d9;
+              li {
+                a {
+                  .block;
+                  .rem(height, 30);
+                  .rem(line-height, 30);
+                  .rem(font-size, 13);
+                  .rem(padding, 0 10);
+                  border-bottom:1px dotted #d9d9d9;
+                  .ellipse;
+
+                  @media all and (min-width: 1200px) {
+                    font-size:16px;
+                    padding:0 16px;
+                    height:50px;
+                    line-height:50px;
+                  }
+
+                  i {
+                    font-style:normal;
+                    color:#828282;
+                    .rem(margin, 0 10 0 0);
+                  }
+
+
+                  &:hover,
+                  &:active {
+                    background:url("../images/icon-notice.png") no-repeat #f7f7f7 right center;
+
+                    @media all and (min-width: 1200px) {
+                      background-size:16px 10px;
+                    }
+                    i {
+                      color:#333;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          section.banner {
+            .zero;
+            .rem(padding, 25 0);
+
+
+            @media all and (min-width: 1200px) {
+              .inline-block;
+              width:580px;
+              margin-top:44px;
+              padding:0;
+              .top;
+            }
+
+            a {
+              .inline-block;
+              width:calc(~"50% - 5px");
+              .rem(height, 140);
+              .rem(border-radius, 6);
+              .rem(font-size, 12);
+              .center;
+              .rem(padding, 112 0 0);
+
+
+
+              @media all and (min-width: 1200px) {
+                width:calc(~"50% - 10px");
+                height:255px;
+                font-size:18px;
+                padding:200px 0 0;
+
+              }
+
+              &.cctv {
+                background:url("../images/banner01.png") no-repeat #05a8e5 center / auto 100%;
+                margin-right:10px;
+                color:#00294c;
+
+                @media all and (min-width: 1200px) {
+                  margin-right:20px;
+                }
+
+              }
+
+              &.unesco {
+                background:url("../images/banner02.png") no-repeat #a9c200 center / auto 100%;
+                color:#30370b;
+              }
+
+              u {
+                .none;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    footer#footer {
+      .center;
+      background:#f2f2f2;
+      .rem(font-size, 10);
+      .rem(padding, 18 0);
+ 
+
     }
 
 }

@@ -1,128 +1,212 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>동굴모니터링시스템</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
-  <!-- javaScript  -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/common.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>동굴모니터링시스템</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/common.js"></script>
 
-</head>
+    </head>
 
-<body class="index">
-  <!-- S:skip_navi -->
-  <div class="skip_navi"> <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a> <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a> </div>
-  <!-- E:skip_navi -->
+    <body class="index">
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+        </div>
+        <!-- E:skip_navi -->
 
-  <header>
-    <div class="container">
-      <h1>
-        <a href="">동굴모니터링</a>
-      </h1>
-      <button class="menu"><i class="icon-menu"></i>메뉴토글</button>
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="">동굴모니터링</a>
+                </h1>
+                <button class="menu">
+                    <i class="icon-menu"></i>메뉴토글</button>
 
-      <nav>
-        <button class="logout">Logout</button>
-        <ul>
-          <li><a href="">동굴별데이터</a></li>
-          <li><a href="">CCTV</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-
-
-  <!-- S:content -->
-  <div id="content">
-    <article class="issue">
-      <ul class="slider">
-        <li>
-            <h2>당처물굴</h2>
-            <div class="nowdata">
-                <p>온도<strong>-10<u>℃</u></strong><i>정상범주 18℃ ~ 22℃</i>
-                </p>
-                <p>습도<strong>0.01<u>%</u></strong><i>정상범주 60% ~ 99%</i>
-                </p>
-                <p>CO2<strong>20<u>ppm</u></strong><i>정상범주 30ppm ~ 50ppm</i>
-                </p>
+                <nav>
+                    <button class="logout">Logout</button>
+                    <ul>
+                        <li>
+                            <a href="">동굴별데이터</a>
+                        </li>
+                        <li>
+                            <a href="">CCTV</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </li>
+        </header>
 
-        <li>
-            <h2>용천굴</h2>
-            <div class="nowdata">
-                <p>온도<strong>-10<u>℃</u></strong><i>정상범주 18℃ ~ 22℃</i>
-                </p>
-                <p>습도<strong>0.01<u>%</u></strong><i>정상범주 60% ~ 99%</i>
-                </p>
-                <p>CO2<strong>20<u>ppm</u></strong><i>정상범주 30ppm ~ 50ppm</i>
-                </p>
+        <!-- S:content -->
+        <div id="content">
+            <article class="issue">
+                <div class="container">
+                    <ul class="slider">
+                        <li>
+                            <h2>당처물굴</h2>
+                            <div class="nowdata">
+                                <p>온도<strong>-10<u>℃</u>
+                                    </strong>
+                                    <i>정상범주 18℃ ~ 22℃</i>
+                                </p>
+                                <p>습도<strong>0.01<u>%</u>
+                                    </strong>
+                                    <i>정상범주 60% ~ 99%</i>
+                                </p>
+                                <p>CO2<strong>20<u>ppm</u>
+                                    </strong>
+                                    <i>정상범주 30ppm ~ 50ppm</i>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h2>용천굴</h2>
+                            <div class="nowdata">
+                                <p>온도<strong>-10<u>℃</u>
+                                    </strong>
+                                    <i>정상범주 18℃ ~ 22℃</i>
+                                </p>
+                                <p>습도<strong>0.01<u>%</u>
+                                    </strong>
+                                    <i>정상범주 60% ~ 99%</i>
+                                </p>
+                                <p>CO2<strong>20<u>ppm</u>
+                                    </strong>
+                                    <i>정상범주 30ppm ~ 50ppm</i>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h2>김녕굴</h2>
+                            <div class="nowdata">
+                                <p>온도<strong>-10<u>℃</u>
+                                    </strong>
+                                    <i>정상범주 18℃ ~ 22℃</i>
+                                </p>
+                                <p>습도<strong>0.01<u>%</u>
+                                    </strong>
+                                    <i>정상범주 60% ~ 99%</i>
+                                </p>
+                                <p>CO2<strong>20<u>ppm</u>
+                                    </strong>
+                                    <i>정상범주 30ppm ~ 50ppm</i>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h2>만장굴</h2>
+                            <div class="nowdata">
+                                <p>온도<strong>-10<u>℃</u>
+                                    </strong>
+                                    <i>정상범주 18℃ ~ 22℃</i>
+                                </p>
+                                <p>습도<strong>0.01<u>%</u>
+                                    </strong>
+                                    <i>정상범주 60% ~ 99%</i>
+                                </p>
+                                <p>CO2<strong>20<u>ppm</u>
+                                    </strong>
+                                    <i>정상범주 30ppm ~ 50ppm</i>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h2>벵뒤굴</h2>
+                            <div class="nowdata">
+                                <p>온도<strong>-10<u>℃</u>
+                                    </strong>
+                                    <i>정상범주 18℃ ~ 22℃</i>
+                                </p>
+                                <p>습도<strong>0.01<u>%</u>
+                                    </strong>
+                                    <i>정상범주 60% ~ 99%</i>
+                                </p>
+                                <p>CO2<strong>20<u>ppm</u>
+                                    </strong>
+                                    <i>정상범주 30ppm ~ 50ppm</i>
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <div class="map">
+
+                        <button data="cave01" class="cave cave01 active">당처물굴</button>
+                        <button data="cave02" class="cave cave02 alert">용천굴</button>
+                        <button data="cave03" class="cave cave03">김녕굴</button>
+                        <button data="cave04" class="cave cave04">만장굴</button>
+                        <button data="cave05" class="cave cave05">벵뒤굴</button>
+                    </div>
+
+                    <button class="btn issuePrev">
+                        <i class="icon-angle-left"></i>이전</button>
+                    <button class="btn issueNext">
+                        <i class="icon-angle-right"></i>다음</button>
+                </div>
+            </article>
+
+            <div class="main-info">
+                <div class="container">
+                    <section class="notice">
+                        <h2>
+                            <a href="">공지사항</a>
+                        </h2>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i>2018.1.6</i>
+                                    공지사항 제목입니다.공지사항 제목입니다.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>2018.1.6</i>
+                                    공지사항 제목입니다.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>2018.1.6</i>
+                                    공지사항 제목입니다.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i>2018.1.6</i>
+                                    공지사항 제목입니다.
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="banner">
+                        <a class="cctv" href="">CCTV 바로가기</a>
+                        <a class="unesco" href="">
+                            <u>제주</u>세계자연유산센터</a>
+                    </section>
+                </div>
             </div>
-        </li>
 
-        <li>
-            <h2>김녕굴</h2>
-            <div class="nowdata">
-                <p>온도<strong>-10<u>℃</u></strong><i>정상범주 18℃ ~ 22℃</i>
-                </p>
-                <p>습도<strong>0.01<u>%</u></strong><i>정상범주 60% ~ 99%</i>
-                </p>
-                <p>CO2<strong>20<u>ppm</u></strong><i>정상범주 30ppm ~ 50ppm</i>
-                </p>
-            </div>
-        </li>
+        </div>
+        <!-- E:content -->
+        <!-- S:footer -->
+        <footer id="footer" class="intro">
+            <p class="copyright">Copyright 2017 제주특별자치도. All right reserved</p>
 
-        <li>
-            <h2>만장굴</h2>
-            <div class="nowdata">
-                <p>온도<strong>-10<u>℃</u></strong><i>정상범주 18℃ ~ 22℃</i>
-                </p>
-                <p>습도<strong>0.01<u>%</u></strong><i>정상범주 60% ~ 99%</i>
-                </p>
-                <p>CO2<strong>20<u>ppm</u></strong><i>정상범주 30ppm ~ 50ppm</i>
-                </p>
-            </div>
-        </li>
-
-        <li>
-            <h2>벵뒤굴</h2>
-            <div class="nowdata">
-                <p>온도<strong>-10<u>℃</u></strong><i>정상범주 18℃ ~ 22℃</i>
-                </p>
-                <p>습도<strong>0.01<u>%</u></strong><i>정상범주 60% ~ 99%</i>
-                </p>
-                <p>CO2<strong>20<u>ppm</u></strong><i>정상범주 30ppm ~ 50ppm</i>
-                </p>
-            </div>
-        </li>
-
-      </ul>
-      
-      <div class="map">
-
-          <button data="cave01" class="cave cave01">당처물굴</button>
-          <button data="cave02" class="cave cave02 alert">용천굴</button>
-          <button data="cave03"class="cave cave03">김녕굴</button>
-          <button data="cave04" class="cave cave04">만장굴</button>
-          <button data="cave05" class="cave cave05 active">벵뒤굴</button>
-      </div>
-    </article>
-
-
-  </div>
-  <!-- E:content -->
-  <!-- S:footer -->
-  <footer id="footer" class="intro">
-    <p class="copyright">© JEJUDO</p>
-
-  </footer>
-  <!-- E:footer -->
-</body>
+        </footer>
+        <!-- E:footer -->
+    </body>
 
 </html>
