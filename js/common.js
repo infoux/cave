@@ -19,5 +19,13 @@ $(document).ready(function() {
     $(".screen .sortdata."+ tabon).addClass("active");
   });
 
+  $("header button.menu").on("click", function() {
+    $("header nav").toggle();
+    $("body").toggleClass("menuOn");
+  });
 
+  $(window).on("resize", function() {
+    $("header nav").removeAttr("style");
+    $("body").removeClass("menuOn");
+  })
 });

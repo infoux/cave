@@ -679,6 +679,12 @@ body.screen {
 }
 
 /* web style */
+
+body.menuOn {
+  height:100vh;
+  overflow:hidden;
+}
+
 body.index,
 body.sub {
 
@@ -707,6 +713,7 @@ body.sub {
 
             h1 {
                 .inline-block;
+                .top;
                 .rem(margin, 14 0 0);
                 .rem(width, 95);
                 .rem(height, 17);
@@ -743,15 +750,75 @@ body.sub {
             }
 
             nav {
-                .block;
+                .none;
                 .fixed;
+                .center;
                 .rem(top, 45);
                 left:0;
                 bottom:0;
                 right:0;
-                background:#000;
+                .rem(padding, 20 0 0);
+                background:url("../images/nav-bg.png") no-repeat #262626 center top / 100% auto;
+
                 @media all and (min-width: 1200px) {
-                  .inline-block;  
+                  .inline-block;
+                  .absolute;
+                  left:auto;
+                  right:0;
+                  top:0;
+                  background:none;
+                  padding:0;
+                }
+
+                button.logout {
+                  background:#000;
+                  color:#fff;
+                  border:none;
+                  .rem(height, 35);
+                  .rem(line-height, 35);
+                  .rem(padding, 0 30);
+                  .rem(border-radius, 17.5);
+                  .rem(margin, 20 0);
+
+                  @media all and (min-width: 1200px) {
+                    font-size:18px;
+                  }
+                }
+
+                ul {
+                  .block;
+                  .no-list;
+                  .mapazero;
+                  line-height:1.6;
+
+                  @media all and (min-width: 1200px) {
+                    .inline-block;
+                    .absolute;
+                    left:-860px;
+                    top:0;
+                    background:none;
+                    padding:0;
+                  }
+
+                  li {
+
+                    @media all and (min-width: 1200px) {
+                      .inline-block;
+                    }
+
+                    a {
+                      .block;
+                      .rem(padding, 6 0);
+                      color:#ccc;
+                      .rem(font-size, 15);
+
+                      @media all and (min-width: 1200px) {
+                        font-size:20px;
+                        padding:0 20px;
+                        line-height:80px;
+                      }
+                    }
+                  }
                 }
             }
 
