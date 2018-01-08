@@ -7,34 +7,18 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "513ac180ff85bd275f2b736720cbbf5e",
-      "css": "home",
+      "uid": "5a562eef72d34f0556ca32bafc9f85b3",
+      "css": "menu",
       "code": 59392,
-      "src": "entypo"
-    },
-    {
-      "uid": "37910a1398001a5ccb541cb2a253a2c7",
-      "css": "right-open",
-      "code": 61446,
-      "src": "mfglabs"
-    },
-    {
-      "uid": "e67bcab050d99eb04d44027139ae05f5",
-      "css": "lock-open",
-      "code": 62739,
-      "src": "mfglabs"
-    },
-    {
-      "uid": "b10e25220faa78c808527a4ba8b5c0f9",
-      "css": "lock-alt",
-      "code": 62736,
-      "src": "mfglabs"
-    },
-    {
-      "uid": "df09e8471b1f0ffb10db52d28dd8104d",
-      "css": "folder-open",
-      "code": 59393,
-      "src": "elusive"
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M1145.1 146H0V0H1145.1ZM1145.1 427.1H0V572.6H1145.1ZM1145.1 854H0V1000H1145.1Z",
+        "width": 1146
+      },
+      "search": [
+        "menu"
+      ]
     }
   ]
 }

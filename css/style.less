@@ -352,7 +352,7 @@ textarea {
 
 a {
   text-decoration: none;
-  color: @gray;
+  color: #333;
 }
 /*font*/
 html {
@@ -362,9 +362,33 @@ html {
   min-height: 100%;
 }
 
+@media (max-width:360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width:361px) and (max-width:480px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media (min-width:481px) {
+  html {
+    font-size: 26px;
+  }
+}
+@media (min-width:1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
+
+
 body {
   font-family: @myfont,"Malgun Gothic", "apple sd gothic neo", sans-serif;
-  color: @gray;
+
 }
 
 .sr-only {
@@ -385,4 +409,353 @@ body {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+
+
+
+
+/* screen style */
+body.screen {
+    width: 100%;
+    background: #262626;
+    .zero;
+    section {
+        .mapazero;
+        .top;
+        width: 50vw;
+        height: 50vh;
+        font-size: 1vw;
+        color: @white;
+        .hidden;
+
+        &.map {
+            background: url("../images/map.png") no-repeat center / 100% 100%;
+            padding: 2%;
+
+            h1 {
+                .mapazero;
+                .inline-block;
+                font-size: 2.6vw;
+                font-weight: 200;
+
+                small {
+                    .block;
+                    .center;
+                    height: 2em;
+                    line-height: 2em;
+                    border-radius: 1em;
+                    margin: 0.6em 0 0;
+                    background: #000;
+                    font-size: 0.4em;
+                    color: #f1b000;
+
+                    strong {
+                        color: @white;
+                        .normal;
+                    }
+                }
+            }
+
+            button {
+                .block;
+                .absolute;
+                left: 0;
+                top: 0;
+                border: none;
+                background: none;
+                color: @white;
+                font-size: 1.2vw;
+                outline: none;
+
+                &.cave01 {
+                    /* 당처물굴 */
+                    left: 44vw;
+                    top: 11.6vh;
+                }
+
+                &.cave02 {
+                    /* 용천굴 */
+                    left: 41vw;
+                    top: 13.8vh;
+                }
+
+                &.cave03 {
+                    /* 김녕굴 */
+                    left: 36vw;
+                    top: 18vh;
+                }
+
+                &.cave04 {
+                    /* 만장굴 */
+                    left: 33vw;
+                    top: 24vh;
+                }
+
+                &.cave05 {
+                    /* 벵뒤굴 */
+                    left: 10vw;
+                    top: 34vh;
+                }
+
+                &::before {
+                    content: "";
+                    .block;
+                    .absolute;
+                    .drop-shadow(0, 3px, 0, 0, 0.8);
+                    left: -0.1em;
+                    top: -2em;
+                    width: 1em;
+                    height: 1em;
+                    border-radius: 50%;
+                    background: #669900;
+                    border: 0.3em solid rgba(0,0,0,0.5);
+                }
+
+                &.alert {
+                    &::before {
+                        background: #cc0033;
+                        animation: blinker 0.6s linear infinite;
+                    }
+                    @keyframes blinker {
+                        50% {
+                            opacity: 0.4;
+                        }
+                    }
+                }
+
+                &.active {
+                    &::before {
+                        background: #0055b5;
+                    }
+                }
+
+            }
+        }
+
+        &.tabdata {
+            .absolute;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            background: #1b1b1b;
+
+            nav {
+                .zero;
+                button {
+                    color: #555;
+                    font-size: 1vw;
+                    border: none;
+                    background: none;
+                    width: calc(~"100% / 5");
+                    height: 8vh;
+                    background: #000;
+                    outline: none;
+
+                    &.active {
+                        background: none;
+                        font-size: 1.6vw;
+                        color: #f1b000;
+                        border-bottom: 0.3vh solid #f1b000;
+
+                    }
+                }
+            }
+
+            div.cavedata {
+                .none;
+                height: calc(~"100vh - 8vh");
+                overflow-y: scroll;
+                -ms-overflow-style: -ms-autohiding-scrollbar;
+                padding: 0 1.2vw;
+
+                &.active {
+                    .block;
+                }
+
+                div.nowdata {
+                    .center;
+                    padding: 2vh 0;
+                    p {
+                        display: inline-block;
+                        width: 10vw;
+                        height: 10vw;
+                        border: 0.4em solid #00aeea;
+                        color: #00aeea;
+                        border-radius: 50%;
+                        padding-top: 1.6vw;
+                        margin-right: 2vw;
+
+                        &:first-of-type {
+                            border-color: #efb001;
+                            color: #efb001;
+                        }
+
+                        &:last-of-type {
+                            margin-right: 0;
+                            border-color: #a8c200;
+                            color: #a8c200;
+                        }
+
+                        strong {
+                            .block;
+                            margin-top: 0.3em;
+                            font-size: 1.8em;
+
+                            u {
+                                text-decoration: none;
+                                font-size: 0.6em;
+                                .normal;
+                            }
+                        }
+
+                        i {
+                            font-style: normal;
+                            font-size: 0.6em;
+                            color: #666;
+                        }
+                    }
+                }
+
+                ul {
+                    .center;
+                    padding: 2vh 0;
+                    margin: 0 0 1vh;
+                    .no-list;
+
+                    .zero;
+                    li {
+                        .inline-block;
+
+                        button {
+                            .inline-block;
+                            color: @white;
+                            border: none;
+                            margin: 0;
+                            padding: 0 2vw;
+                            height: 5vh;
+                            line-height: 5vh;
+                            background: #000;
+                            color: #666;
+
+                            font-size: 1.2vw;
+                            outline: none;
+
+                            &.active {
+                                background: #333;
+                                color: #fff;
+                            }
+                        }
+
+                        &:first-child {
+                            button {
+                                border-radius: 0.6vw 0 0 0.6vw;
+                            }
+                        }
+
+                        &:last-child {
+                            button {
+                                border-radius: 0 0.6vw 0.6vw 0;
+                            }
+                        }
+                    }
+                }
+
+                div.sortdata {
+                    .none;
+                    background: #333;
+
+                    &.active {
+                        .block;
+                    }
+                }
+            }
+        }
+
+        &.cctv {
+            background: #000;
+        }
+
+    }
+}
+
+/* web style */
+body.index,
+body.sub {
+
+    .container {
+        .container(100%);
+        .left;
+        .rem(padding, 0 10);
+        @media all and (min-width: 1200px) {
+            .container(1200px);
+            padding: 0;
+
+        }
+    }
+
+    header {
+
+        background: #2d2d2d;
+        .rem(height, 45);
+        .center;
+        @media all and (min-width: 1200px) {
+            height: 80px;
+
+        }
+        .container {
+            .rem(line-height, 45);
+
+            h1 {
+                .inline-block;
+                .rem(margin, 14 0 0);
+                .rem(width, 95);
+                .rem(height, 17);
+                @media all and (min-width: 1200px) {
+                    margin: 20px 0 0;
+                    width: 168px;
+                    height: 30px;
+
+                }
+                a {
+                    .block;
+                    width: 100%;
+                    height: 100%;
+                    .zero;
+                    background: url("../images/web-logo.svg") no-repeat center;
+                }
+            }
+            button.menu {
+              .absolute;
+              .rem(right, 10);
+              .rem(top, 14);
+              padding:0;
+              background:none;
+              border:none;
+              .zero;
+              @media all and (min-width: 1200px) {
+                .none;
+
+              }
+              i {
+                .rem(font-size, 18);
+                color:#fff;
+              }
+            }
+
+            nav {
+                .block;
+                .fixed;
+                .rem(top, 45);
+                left:0;
+                bottom:0;
+                right:0;
+                background:#000;
+                @media all and (min-width: 1200px) {
+                  .inline-block;  
+                }
+            }
+
+        }
+    }
+
 }

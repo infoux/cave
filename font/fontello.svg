@@ -1,20 +1,12 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
 <defs>
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
-<glyph glyph-name="home" unicode="&#xe800;" d="M888 336q16-16 11-27t-27-11l-84 0 0-310q0-14-1-21t-8-13-23-6l-204 0 0 310-204 0 0-310-194 0q-28 0-35 10t-7 30l0 310-84 0q-22 0-27 11t11 27l400 402q16 16 38 16t38-16z" horiz-adv-x="900" />
-
-<glyph glyph-name="folder-open" unicode="&#xe801;" d="M0-52l0 55 147 505 853 0-172-560-828 0z m0 205l0 510 139 0 68 90 217 0 68-90 336 0 0-121-724 0z" horiz-adv-x="1000" />
-
-<glyph glyph-name="right-open" unicode="&#xf006;" d="M0 0q0 25 18 43l305 304-305 304q-18 18-18 44t18 43 44 18 43-18l390-391-390-391q-19-18-43-18t-44 18q-18 18-18 44z" horiz-adv-x="495.1" />
-
-<glyph glyph-name="lock-alt" unicode="&#xf510;" d="M0-30v393q0 14 10 24t25 9h45v149q0 55 20 104t56 88q36 38 85 60t104 21 104-21 84-60q37-38 57-88t20-104v-149h45q15 0 25-9t10-24v-393q0-13-8-19t-27-14q-10-5-35-12t-66-19-98-17-111-8q-155 0-310 56-17 5-26 13t-9 20z m206 426h278v149q0 63-42 108-42 42-97 42t-98-42q-41-44-41-108v-149z m28-334q0-11 9-20 8-8 19-8 12 0 20 8l63 63 63-63q7-8 19-8 11 0 20 8 8 9 8 20t-8 19l-63 63 63 63q8 8 8 20t-8 19-20 9-19-9l-63-63-63 63q-9 9-20 9t-19-9-9-19 9-20l63-63-63-63q-9-8-9-19z" horiz-adv-x="689.5" />
-
-<glyph glyph-name="lock-open" unicode="&#xf513;" d="M32 359v187q0 54 19 104t55 87q36 39 84 60t101 21 102-21 83-60 55-87 20-104v-148h452q14 0 24-10t10-25v-393q0-9-5-15t-11-9-18-9q-11-5-35-12t-66-18-98-18-111-8q-155 0-310 56-17 6-26 13t-9 20v393q0 15 10 25t25 10h45v148q0 62-41 107-40 42-96 42-56 0-95-42-41-45-41-107v-46l-60-72h60v-69l-59-45z" horiz-adv-x="1068.8" />
+<glyph glyph-name="menu" unicode="&#xe800;" d="M1145 704h-1145v146h1145z m0-281h-1145v-146h1145z m0-427h-1145v-146h1145z" horiz-adv-x="1146" />
 </font>
 </defs>
 </svg>
