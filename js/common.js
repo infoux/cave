@@ -11,9 +11,9 @@ $(document).ready(function() {
   });
 
   $(".screen ul button").on("click", function() {
-    var tabon = $(this).attr("class");
+    var tabon = $(this).attr("data");
     $(".screen ul button").removeClass("active");
-    $(".screen ul button."+ tabon).addClass("active");
+    $(this).addClass("active");
 
     $(".screen .sortdata").removeClass("active");
     $(".screen .sortdata."+ tabon).addClass("active");
