@@ -757,6 +757,81 @@ body.screen {
     }
 }
 
+
+/* login style */
+body.login {
+  .fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background:url("../images/login-bg.jpg") no-repeat center / cover;
+
+  fieldset {
+    .center;
+    border:none;
+    padding:26vh 0 0;
+
+    h1 {
+      .block;
+      .zero;
+      .rem(width, 200);
+      .rem(height, 36);
+      .rem(margin, 0 auto 30);
+      background:url("../images/login-logo.png") no-repeat center / 100% 100%;
+
+      @media all and (min-width: 1200px) {
+        width:332px;
+        height:60px;
+        margin-bottom:54px;
+      }
+    }
+    
+    input {
+      .block;
+      .rem(width, 200);
+      .rem(height, 30);
+      .rem(margin, 0 auto 10);
+      .rem(padding, 0 10);
+      .rem(border-radius, 15);
+      border:none;
+      .opacity(0.8);
+      .drop-shadow(0, 2px, 0, 0, @alpha: 0.8);
+      outline:none;
+      @media all and (min-width: 1200px) {
+        width:500px;
+        height:70px;
+        margin-bottom:30px;
+        border-radius:35px;
+        font-size:25px;
+        padding:0 30px;
+      }
+    }
+    
+    button {
+      .block;
+      .rem(width, 200);
+      .rem(height, 30);
+      .rem(margin, 0 auto 10);
+      .rem(padding, 0 10);
+      .rem(border-radius, 15);
+      border:none;
+      color:#fff;
+      .drop-shadow(0, 2px, 0, 0, @alpha: 0.8);
+      .gradient(#292929, #000, #111);
+      outline:none;
+      @media all and (min-width: 1200px) {
+        width:500px;
+        height:70px;
+        margin-bottom:30px;
+        border-radius:35px;
+        font-size:25px;
+      }
+    }
+  }
+}
+
+
 /* web style */
 
 body.menuOn {
