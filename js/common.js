@@ -14,9 +14,9 @@ $(document).ready(function() {
 
   });
 
-  $(".screen ul button").on("click", function() {
+  $(".screen ul.tabs button").on("click", function() {
     var tabon = $(this).attr("data");
-    $(".screen ul button").removeClass("active");
+    $(this).parent().parent().find("button").removeClass("active");
     $(this).addClass("active");
 
     $(".screen .sortdata").removeClass("active");
