@@ -8,6 +8,10 @@ $(document).ready(function() {
 
     $(".screen .cavedata").removeClass("active");
     $(".screen .cavedata."+ switchon).addClass("active");
+
+    $("#map").removeAttr("class");
+    $("#map").addClass(switchon);
+
   });
 
   $(".screen ul button").on("click", function() {

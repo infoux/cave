@@ -15,143 +15,83 @@
 
     <body class="screen">
 
-        <section class="map">
-            <h1>거믄오름용암동굴계 <small>현재시각 <strong>AM 06:28:39</strong></small></h1>
+        <section id="map" class="cave01">
+            <h1>거믄오름용암동굴계
+                <small>현재시각
+                    <strong>AM 06:28:39</strong>
+                </small>
+            </h1>
 
-            <button data="cave01" class="cave cave01">당처물굴</button>
-            <button data="cave02" class="cave cave02 alert">용천굴</button>
-            <button data="cave03"class="cave cave03">김녕굴</button>
-            <button data="cave04" class="cave cave04">만장굴</button>
-            <button data="cave05" class="cave cave05 active">벵뒤굴</button>
+            <div class="cavebtn">
+                <button data="cave01" class="cave cave01">당처물굴</button>
+                <button data="cave02" class="cave cave02 alert">용천굴</button>
+                <button data="cave03" class="cave cave03">김녕굴</button>
+                <button data="cave04" class="cave cave04">만장굴</button>
+                <button data="cave05" class="cave cave05 active">벵뒤굴</button>
+            </div>
         </section>
 
         <section class="tabdata">
             <h1 class="sr-only">동굴별 데이터</h1>
 
             <nav>
-                <button data="cave00" class="cave cave00">전체</button>
-                <button data="cave01" class="cave cave01">당처물굴</button>
-                <button data="cave02" class="cave cave02 active">용천굴</button>
+                <button data="cave01" class="cave cave01 active">당처물굴</button>
+                <button data="cave02" class="cave cave02">용천굴</button>
                 <button data="cave03" class="cave cave03">김녕굴</button>
                 <button data="cave04" class="cave cave04">만장굴</button>
                 <button data="cave05" class="cave cave05">벵뒤굴</button>
+
             </nav>
-            <div class="cavedata cave00">
 
-                    <h2 class="sr-only">전체 실시간 센서값</h2>
-                    <div class="nowdata">
-                        <p class="data01">온도<strong>-10<u>℃</u></strong>
-                        </p>
-                        <p class="data02">습도<strong>0.01<u>%</u></strong>
-                        </p>
-                        <p class="data03">CO2<strong>20<u>ppm</u></strong>
-                        </p>
-    
-                        <p class="data04">진동<strong>20<u>gal</u></strong>
-                        </p>
-                        <p class="data05">소음<strong>20<u>db</u></strong>
-                        </p>
-                        <p class="data06">균열<strong>20<u>mm</u></strong>
-                        </p>
-    
-                        <p class="data07">수위<strong>20<u>m</u></strong>
-                        </p>
-                        <p class="data08">ph<strong>20<u>ph</u></strong>
-                        </p>
-                        <p class="data09">수온<strong>20<u>℃</u></strong>
-                        </p>
-    
-                        <p class="data10">라돈<strong>20<u>Bq/㎥</u></strong>
-                        </p>
-                        <p class="data11">전기전도도<strong>20<u>S/m</u></strong>
-                        </p>
-                        <p class="data12">염도<strong>20<u>%</u></strong>
-                        </p>
-    
-                        <!--
-                            온도 : data01
-                            습도 : data02
-                            CO2 : data03
-                            진동 : data04
-                            소음 : data05
-                            균열 : data06
-                            수위 : data07
-                            ph : data08
-                            수온 : data09
-                            라돈 : data10
-                            전기전도도 : data11
-                            염도 : data12
-                        -->
-    
-    
-    
-    
-                    </div>
-    
-                    <h2 class="sr-only">전체 데이터</h2>
-                    <ul>
-                        <li>
-                            <button data="sort01" class="active">유형별</button>
-                        </li>
-                        <li>
-                            <button data="sort02">기간별</button>
-                        </li>
-                    </ul>
-    
-                    <div class="sortdata sort01">
-                        당처물굴 온도그래프, 습도그래프, co2그래프
-                    </div>
-    
-                    <div class="sortdata sort02">
-                        일별 그래프, 월별 그래프
-                    </div>
-                </div>
-    
-            <div class="cavedata cave01">
+            <div class="cavedata cave01 active">
 
+                <ul class="subtab">
+                    <li><input id="radio0101" name="cave01" type="radio" checked="checked">
+                        <label for="radio0101">전체</label>
+                    </li>
+                    <li><input id="radio0102" name="cave01" type="radio">
+                        <label for="radio0102">입구</label>
+                    </li>
+                    <li><input id="radio0103" name="cave01" type="radio">
+                        <label for="radio0103">중간</label>
+                    </li>
+                </ul>
                 <h2 class="sr-only">당처물굴 실시간 센서값</h2>
                 <div class="nowdata">
-                    <p class="data01">온도<strong>-10<u>℃</u></strong>
+                    <p class="data01">온도<strong>-10<u>℃</u>
+                        </strong>
                     </p>
-                    <p class="data02">습도<strong>0.01<u>%</u></strong>
+                    <p class="data02">습도<strong>0.01<u>%</u>
+                        </strong>
                     </p>
-                    <p class="data03">CO2<strong>20<u>ppm</u></strong>
-                    </p>
-
-                    <p class="data08">ph<strong>20<u>ph</u></strong>
-                    </p>
-                    <p class="data09">수온<strong>20<u>℃</u></strong>
+                    <p class="data03">CO2<strong>20<u>ppm</u>
+                        </strong>
                     </p>
 
-                    <p class="data10">라돈<strong>20<u>Bq/㎥</u></strong>
+                    <p class="data08">ph<strong>20<u>ph</u>
+                        </strong>
                     </p>
-                    <p class="data11">전기전도도<strong>20<u>S/m</u></strong>
+                    <p class="data09">수온<strong>20<u>℃</u>
+                        </strong>
                     </p>
-                    <p class="data12">염도<strong>20<u>%</u></strong>
+
+                    <p class="data10">라돈<strong>20<u>Bq/㎥</u>
+                        </strong>
+                    </p>
+                    <p class="data11">전기전도도<strong>20<u>S/m</u>
+                        </strong>
+                    </p>
+                    <p class="data12">염도<strong>20<u>%</u>
+                        </strong>
                     </p>
 
-                    <!--
-                        온도 : data01
-                        습도 : data02
-                        CO2 : data03
-                        진동 : data04
-                        소음 : data05
-                        균열 : data06
-                        수위 : data07
-                        ph : data08
-                        수온 : data09
-                        라돈 : data10
-                        전기전도도 : data11
-                        염도 : data12
-                    -->
-
-
-
+                    <!-- 온도 : data01 습도 : data02 CO2 : data03 진동 : data04 소음 : data05 균열 : data06 수위
+                    : data07 ph : data08 수온 : data09 라돈 : data10 전기전도도 : data11 염도 : data12 -->
 
                 </div>
 
                 <h2 class="sr-only">당처물굴 데이터</h2>
-                <ul>
+                <ul class="tabs">
                     <li>
                         <button data="sort01" class="active">유형별</button>
                     </li>
@@ -169,57 +109,71 @@
                 </div>
             </div>
 
-            <div class="cavedata cave02 active">
+            <div class="cavedata cave02">
 
+                <ul class="subtab">
+                    <li><input id="radio0201" name="cave02" type="radio" checked="checked">
+                        <label for="radio0201">전체</label>
+                    </li>
+                    <li><input id="radio0202" name="cave02" type="radio">
+                        <label for="radio0202">입구</label>
+                    </li>
+                    <li><input id="radio0203" name="cave02" type="radio">
+                        <label for="radio0203">도로하부</label>
+                    </li>
+                    <li><input id="radio0204" name="cave02" type="radio">
+                        <label for="radio0204">중간</label>
+                    </li>
+                    <li><input id="radio0205" name="cave02" type="radio">
+                        <label for="radio0205">종단</label>
+                    </li>
+                </ul>
                 <h2 class="sr-only">용천굴 실시간 센서값</h2>
                 <div class="nowdata">
-                        <p class="data01">온도<strong>-10<u>℃</u></strong>
-                        </p>
-                        <p class="data02">습도<strong>0.01<u>%</u></strong>
-                        </p>
-                        <p class="data03">CO2<strong>20<u>ppm</u></strong>
-                        </p>
-    
-                        <p class="data04">진동<strong>20<u>gal</u></strong>
-                        </p>
-                        <p class="data05">소음<strong>20<u>db</u></strong>
-                        </p>
-                        <p class="data06">균열<strong>20<u>mm</u></strong>
-                        </p>
-    
-                        <p class="data07">수위<strong>20<u>m</u></strong>
-                        </p>
-                        <p class="data08">ph<strong>20<u>ph</u></strong>
-                        </p>
-                        <p class="data09">수온<strong>20<u>℃</u></strong>
-                        </p>
-    
-                        <p class="data10">라돈<strong>20<u>Bq/㎥</u></strong>
-                        </p>
-                        <p class="data11">전기전도도<strong>20<u>S/m</u></strong>
-                        </p>
-                        <p class="data12">염도<strong>20<u>%</u></strong>
-                        </p>
-    
-                        <!--
-                            온도 : data01
-                            습도 : data02
-                            CO2 : data03
-                            진동 : data04
-                            소음 : data05
-                            균열 : data06
-                            수위 : data07
-                            ph : data08
-                            수온 : data09
-                            라돈 : data10
-                            전기전도도 : data11
-                            염도 : data12
-                        -->
-    
-    
-    
-    
-                    </div>
+                    <p class="data01">온도<strong>-10<u>℃</u>
+                        </strong>
+                    </p>
+                    <p class="data02">습도<strong>0.01<u>%</u>
+                        </strong>
+                    </p>
+                    <p class="data03">CO2<strong>20<u>ppm</u>
+                        </strong>
+                    </p>
+
+                    <p class="data04">진동<strong>20<u>gal</u>
+                        </strong>
+                    </p>
+                    <p class="data05">소음<strong>20<u>db</u>
+                        </strong>
+                    </p>
+                    <p class="data06">균열<strong>20<u>mm</u>
+                        </strong>
+                    </p>
+
+                    <p class="data07">수위<strong>20<u>m</u>
+                        </strong>
+                    </p>
+                    <p class="data08">ph<strong>20<u>ph</u>
+                        </strong>
+                    </p>
+                    <p class="data09">수온<strong>20<u>℃</u>
+                        </strong>
+                    </p>
+
+                    <p class="data10">라돈<strong>20<u>Bq/㎥</u>
+                        </strong>
+                    </p>
+                    <p class="data11">전기전도도<strong>20<u>S/m</u>
+                        </strong>
+                    </p>
+                    <p class="data12">염도<strong>20<u>%</u>
+                        </strong>
+                    </p>
+
+                    <!-- 온도 : data01 습도 : data02 CO2 : data03 진동 : data04 소음 : data05 균열 : data06 수위
+                    : data07 ph : data08 수온 : data09 라돈 : data10 전기전도도 : data11 염도 : data12 -->
+
+                </div>
 
                 <h2 class="sr-only">용천굴 데이터</h2>
                 <ul>
@@ -246,35 +200,36 @@
 
             <div class="cavedata cave03">
 
+                    <ul class="subtab">
+                            <li><input id="radio0301" name="cave03" type="radio" checked="checked">
+                                <label for="radio0301">전체</label>
+                            </li>
+                            <li><input id="radio0302" name="cave03" type="radio">
+                                <label for="radio0302">외부</label>
+                            </li>
+                            <li><input id="radio0303" name="cave03" type="radio">
+                                <label for="radio0303">입구</label>
+                            </li>
+                            <li><input id="radio0304" name="cave03" type="radio">
+                                <label for="radio0304">중간</label>
+                            </li>
+                        </ul>
+                <h2 class="sr-only">김녕굴 실시간 센서값</h2>
+                <div class="nowdata">
+                    <p class="data01">온도<strong>-10<u>℃</u>
+                        </strong>
+                    </p>
+                    <p class="data02">습도<strong>0.01<u>%</u>
+                        </strong>
+                    </p>
+                    <p class="data03">CO2<strong>20<u>ppm</u>
+                        </strong>
+                    </p>
 
-                    <h2 class="sr-only">김녕굴 실시간 센서값</h2>
-                    <div class="nowdata">
-                        <p class="data01">온도<strong>-10<u>℃</u></strong>
-                        </p>
-                        <p class="data02">습도<strong>0.01<u>%</u></strong>
-                        </p>
-                        <p class="data03">CO2<strong>20<u>ppm</u></strong>
-                        </p>
-    
-                        <!--
-                            온도 : data01
-                            습도 : data02
-                            CO2 : data03
-                            진동 : data04
-                            소음 : data05
-                            균열 : data06
-                            수위 : data07
-                            ph : data08
-                            수온 : data09
-                            라돈 : data10
-                            전기전도도 : data11
-                            염도 : data12
-                        -->
-    
-    
-    
-    
-                    </div>
+                    <!-- 온도 : data01 습도 : data02 CO2 : data03 진동 : data04 소음 : data05 균열 : data06 수위
+                    : data07 ph : data08 수온 : data09 라돈 : data10 전기전도도 : data11 염도 : data12 -->
+
+                </div>
 
                 <h2 class="sr-only">김녕굴 데이터</h2>
                 <ul>
@@ -296,42 +251,50 @@
             </div>
 
             <div class="cavedata cave04">
+                    <ul class="subtab">
+                            <li><input id="radio0401" name="cave04" type="radio" checked="checked">
+                                <label for="radio0401">전체</label>
+                            </li>
+                            <li><input id="radio0402" name="cave04" type="radio">
+                                <label for="radio0402">입구</label>
+                            </li>
+                            <li><input id="radio0403" name="cave04" type="radio">
+                                <label for="radio0403">거북바위</label>
+                            </li>
+                            <li><input id="radio0404" name="cave04" type="radio">
+                                <label for="radio0404">개방종단</label>
+                            </li>
+                            <li><input id="radio0405" name="cave04" type="radio">
+                                <label for="radio0405">미개방중간</label>
+                            </li>
+                            <li><input id="radio0406" name="cave04" type="radio">
+                                <label for="radio0406">미개방종단</label>
+                            </li>
+                        </ul>
+                <h2 class="sr-only">만장굴 실시간 센서값</h2>
+                <div class="nowdata">
+                    <p class="data01">온도<strong>-10<u>℃</u>
+                        </strong>
+                    </p>
+                    <p class="data02">습도<strong>0.01<u>%</u>
+                        </strong>
+                    </p>
+                    <p class="data03">CO2<strong>20<u>ppm</u>
+                        </strong>
+                    </p>
 
-                    <h2 class="sr-only">만장굴 실시간 센서값</h2>
-                    <div class="nowdata">
-                            <p class="data01">온도<strong>-10<u>℃</u></strong>
-                            </p>
-                            <p class="data02">습도<strong>0.01<u>%</u></strong>
-                            </p>
-                            <p class="data03">CO2<strong>20<u>ppm</u></strong>
-                            </p>
-        
-                            <p class="data07">수위<strong>20<u>m</u></strong>
-                            </p>
-        
-                            <p class="data10">라돈<strong>20<u>Bq/㎥</u></strong>
-                            </p>
+                    <p class="data07">수위<strong>20<u>m</u>
+                        </strong>
+                    </p>
 
-    
-                        <!--
-                            온도 : data01
-                            습도 : data02
-                            CO2 : data03
-                            진동 : data04
-                            소음 : data05
-                            균열 : data06
-                            수위 : data07
-                            ph : data08
-                            수온 : data09
-                            라돈 : data10
-                            전기전도도 : data11
-                            염도 : data12
-                        -->
-    
-    
-    
-    
-                    </div>
+                    <p class="data10">라돈<strong>20<u>Bq/㎥</u>
+                        </strong>
+                    </p>
+
+                    <!-- 온도 : data01 습도 : data02 CO2 : data03 진동 : data04 소음 : data05 균열 : data06 수위
+                    : data07 ph : data08 수온 : data09 라돈 : data10 전기전도도 : data11 염도 : data12 -->
+
+                </div>
 
                 <h2 class="sr-only">만장굴 데이터</h2>
                 <ul>
@@ -353,35 +316,36 @@
             </div>
 
             <div class="cavedata cave05">
-
+                    <ul class="subtab">
+                            <li><input id="radio0501" name="cave05" type="radio" checked="checked">
+                                <label for="radio0501">전체</label>
+                            </li>
+                            <li><input id="radio0502" name="cave05" type="radio">
+                                <label for="radio0502">입구</label>
+                            </li>
+                            <li><input id="radio0503" name="cave05" type="radio">
+                                <label for="radio0503">중간</label>
+                            </li>
+                            <li><input id="radio0504" name="cave05" type="radio">
+                                <label for="radio0504">종단</label>
+                            </li>
+                        </ul>
                 <h2 class="sr-only">벵뒤굴 실시간 센서값</h2>
                 <div class="nowdata">
-                        <p class="data01">온도<strong>-10<u>℃</u></strong>
-                        </p>
-                        <p class="data02">습도<strong>0.01<u>%</u></strong>
-                        </p>
-                        <p class="data03">CO2<strong>20<u>ppm</u></strong>
-                        </p>
-    
-                        <!--
-                            온도 : data01
-                            습도 : data02
-                            CO2 : data03
-                            진동 : data04
-                            소음 : data05
-                            균열 : data06
-                            수위 : data07
-                            ph : data08
-                            수온 : data09
-                            라돈 : data10
-                            전기전도도 : data11
-                            염도 : data12
-                        -->
-    
-    
-    
-    
-                    </div>
+                    <p class="data01">온도<strong>-10<u>℃</u>
+                        </strong>
+                    </p>
+                    <p class="data02">습도<strong>0.01<u>%</u>
+                        </strong>
+                    </p>
+                    <p class="data03">CO2<strong>20<u>ppm</u>
+                        </strong>
+                    </p>
+
+                    <!-- 온도 : data01 습도 : data02 CO2 : data03 진동 : data04 소음 : data05 균열 : data06 수위
+                    : data07 ph : data08 수온 : data09 라돈 : data10 전기전도도 : data11 염도 : data12 -->
+
+                </div>
                 <h2 class="sr-only">벵뒤굴 데이터</h2>
                 <ul>
                     <li>

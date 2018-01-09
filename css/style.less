@@ -428,9 +428,31 @@ body.screen {
         color: @white;
         .hidden;
 
-        &.map {
-            background: url("../images/map.png") no-repeat center / 100% 100%;
+        &#map {
+
             padding: 2%;
+
+            &.cave01 {
+              background: url("../images/map01.png") no-repeat center / 100% 100%;
+            }
+
+            &.cave02 {
+              background: url("../images/map02.png") no-repeat center / 100% 100%;
+            }
+
+            &.cave03 {
+              background: url("../images/map03.png") no-repeat center / 100% 100%;
+            }
+
+            &.cave04 {
+              background: url("../images/map04.png") no-repeat center / 100% 100%;
+            }
+
+            &.cave05 {
+              background: url("../images/map05.png") no-repeat center / 100% 100%;
+            }
+
+
 
             h1 {
                 .mapazero;
@@ -456,80 +478,80 @@ body.screen {
                 }
             }
 
-            button {
-                .block;
-                .absolute;
-                left: 0;
-                top: 0;
-                border: none;
-                background: none;
-                color: @white;
-                font-size: 1.2vw;
-                outline: none;
+            div.cavebtn {
+              button {
+                  .block;
+                  .absolute;
+                  left: 0;
+                  top: 0;
+                  border: none;
+                  background: none;
+                  color: @white;
+                  outline: none;
+                  .zero;
 
-                &.cave01 {
-                    /* 당처물굴 */
-                    left: 44vw;
-                    top: 11.6vh;
-                }
+                  &.cave01 {
+                      /* 당처물굴 */
+                      left: 46.2vw;
+                      top: 23.6vh;
+                  }
 
-                &.cave02 {
-                    /* 용천굴 */
-                    left: 41vw;
-                    top: 13.8vh;
-                }
+                  &.cave02 {
+                      /* 용천굴 */
+                      left: 45vw;
+                      top: 25.6vh;
+                  }
 
-                &.cave03 {
-                    /* 김녕굴 */
-                    left: 36vw;
-                    top: 18vh;
-                }
+                  &.cave03 {
+                      /* 김녕굴 */
+                      left: 43.4vw;
+                      top: 28vh;
+                  }
 
-                &.cave04 {
-                    /* 만장굴 */
-                    left: 33vw;
-                    top: 24vh;
-                }
+                  &.cave04 {
+                      /* 만장굴 */
+                      left: 42.6vw;
+                      top: 31vh;
+                  }
 
-                &.cave05 {
-                    /* 벵뒤굴 */
-                    left: 10vw;
-                    top: 34vh;
-                }
+                  &.cave05 {
+                      /* 벵뒤굴 */
+                      left: 34.6vw;
+                      top: 40vh;
+                  }
 
-                &::before {
-                    content: "";
-                    .block;
-                    .absolute;
-                    .drop-shadow(0, 3px, 0, 0, 0.8);
-                    left: -0.1em;
-                    top: -2em;
-                    width: 1em;
-                    height: 1em;
-                    border-radius: 50%;
-                    background: #669900;
-                    border: 0.3em solid rgba(0,0,0,0.5);
-                }
+                  &::before {
+                      content: "";
+                      .block;
+                      .absolute;
+                      .drop-shadow(0, 3px, 0, 0, 0.8);
+                      width: 0.8vw;
+                      height: 0.8vw;
+                      border-radius: 50%;
+                      background: #669900;
+                      border: 0.3vw solid rgba(0,0,0,0.5);
+                  }
 
-                &.alert {
-                    &::before {
-                        background: #cc0033;
-                        animation: blinker 0.6s linear infinite;
-                    }
-                    @keyframes blinker {
-                        50% {
-                            opacity: 0.4;
-                        }
-                    }
-                }
+                  &.alert {
+                      &::before {
+                          background: #cc0033;
+                          animation: blinker 0.6s linear infinite;
+                      }
+                      @keyframes blinker {
+                          50% {
+                              opacity: 0.4;
+                          }
+                      }
+                  }
 
-                &.active {
-                    &::before {
-                        background: #0055b5;
-                    }
-                }
+                  &.active {
+                      &::before {
+                          background: #0055b5;
+                      }
+                  }
 
-            }
+              }
+          }
         }
 
         &.tabdata {
@@ -546,7 +568,7 @@ body.screen {
                     font-size: 1vw;
                     border: none;
                     background: none;
-                    width: calc(~"100% / 6");
+                    width: calc(~"100% / 5");
                     height: 6vh;
                     background: #000;
                     outline: none;
@@ -572,9 +594,53 @@ body.screen {
                     .block;
                 }
 
+                ul.subtab {
+                  background:#333;
+                  color:#fff;
+                  font-size:1vw;
+                  margin:2vh 0;
+                  border-radius:1.9vh;
+
+                  li {
+                    .no-list;
+                    .inline-block;
+                    height:3.8vh;
+                    line-height:3.8vh;
+                    margin-right:1.4vw;
+
+                    label {
+                      .inline-block;
+                      cursor:pointer;
+
+                      color:#777;
+
+                      &::before {
+                        content:"";
+                        .inline-block;
+                        .relative;
+                        top:0.5vh;
+                        width:0.8vw;
+                        height:0.8vw;
+                        margin-right:0.4vw;
+                        border-radius:0.5vw;
+                        border:0.3vw solid #666;
+                        background:#333;
+                      }
+                    }
+
+                    input:checked + label {
+                      color:#fff;
+                      &::before {
+                        background:#fff;
+                        border-color:#222;
+                      }
+                    }
+                  }
+                }
+
                 div.nowdata {
 
-                    padding: 3vh 0 0;
+                    padding: 0;
                     min-height:44vh;
                     .zero;
 
@@ -585,7 +651,7 @@ body.screen {
                         .center;
                         width: calc(~"(100% - 2.4vw) / 5");
                         height: 7.8vw;
-                        border: 0.1vw solid #999;
+                        border: 0.2vw solid #999;
                         color: #999;
                         font-size:1vw;
                         border-radius: 2vw;
@@ -631,7 +697,7 @@ body.screen {
                     }
                 }
 
-                ul {
+                ul.tabs {
                     .center;
                     padding: 2vh 0;
                     margin: 0 0 1vh;
