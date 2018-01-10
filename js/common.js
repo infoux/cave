@@ -12,6 +12,8 @@ $(document).ready(function() {
     $("#map").removeAttr("class");
     $("#map").addClass(switchon);
 
+    $("h1 p").html($(this).html());
+
   });
 
   $(".screen ul.tabs button").on("click", function() {
