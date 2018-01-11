@@ -36,6 +36,8 @@ $(document).ready(function() {
   });
 
 
+try {
+
     var issueSlider = $('.issue .slider').bxSlider({
       pager: false,
       controls: false,
@@ -51,6 +53,9 @@ $(document).ready(function() {
       }
 
     });
+} catch(e) {
+
+}
 
     $(".issue .map button").on("click", function() {
       var gotoNum = $(this).attr("data");
