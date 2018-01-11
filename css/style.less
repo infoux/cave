@@ -1059,7 +1059,7 @@ body.sub {
                                 @media all and (min-width: 1200px) {
                                     width: 248px;
                                     height: 248px;
-                                    border: 16px solid #00aeea;
+                                    border: 10px solid #00aeea;
                                     border-radius: 50%;
                                     font-size: 22px;
                                     padding: 50px 0;
@@ -1386,6 +1386,124 @@ body.sub {
                     }
                 }
 
+            }
+        }
+
+        &.sub {
+            .center;
+            .rem(min-height, 200);
+
+            .container {
+                fieldset.sort {
+                    border:none;
+                    .rem(margin, 10 0 20);
+                    .rem(padding, 10);
+                    background:#efefef;
+
+                    label {
+                        .none;
+                    }
+                    select {
+                        .rem(min-width, 140);
+                        width:100%;
+                        .rem(height, 28);
+                        .rem(padding, 0 10);
+                        .rem(margin, 0 0 4);
+
+                        @media all and (min-width: 1200px) {
+                            .inline-block;
+                            .top;
+                            margin:0 5px 0;
+                            height:40px;
+                            width:auto;
+                        }
+                    }
+
+                    p.date {
+                        .zero;
+                        .top;
+                        background:#fff;
+                        border:1px solid #ccc;
+                        
+                        .rem(margin, 0 0 4);
+
+                        @media all and (min-width: 1200px) {
+                            .inline-block;
+                            .top;
+                            margin:0 5px 0;
+                            height:40px;
+                        }
+                        input {
+                            .rem(font-size, 14);
+                            .top;
+                            border:none;
+                            background:0,0,0,0;
+                            .rem(height, 28);
+                            width:calc(~"100% - 56px");
+                            padding:0 10px;
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                            }
+
+                        }
+                        button {
+                            .top;
+                            background:none;
+                            border:none;
+                            .rem(height, 28);
+                            width:56px;
+                            @media all and (min-width: 1200px) {
+                                height:40px;
+                            }
+                            i {
+                                .rem(font-size, 14);
+                                @media all and (min-width: 1200px) {
+                                    font-size:18px;
+                                }
+                            }
+                        }
+                    }
+
+                    p.type {
+                        .zero;
+                        .rem(height, 32);
+                        .rem(margin, 0 0 4);
+                        .rem(padding, 4);
+                        background:#333;
+                        .rem(border-radius, 6);
+
+                        @media all and (min-width: 1200px) {
+                            .inline-block;
+                            .top;
+                            margin:0 5px 0;
+                            height:40px;
+                            width:240px;
+                            padding:2px;
+                            float:right;
+                        }
+                        label {
+                            .inline-block;
+                            .rem(font-size, 14);
+                            width:calc(~"100% / 3");
+                            .center;
+                            height:100%;
+                            .rem(line-height, 26);
+                            .rem(border-radius, 4);
+                            color:#fff;
+
+                            @media all and (min-width: 1200px) {
+                                line-height:36px;
+                            }
+
+                        }
+                        input {
+                            .none;
+                        }
+                        input:checked + label {
+                            background:#00aeea;
+                        }
+                    }
+                }
             }
         }
     }

@@ -31,6 +31,12 @@
       "css": "angle-right",
       "code": 61701,
       "src": "fontawesome"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59393,
+      "src": "fontawesome"
     }
   ]
 }

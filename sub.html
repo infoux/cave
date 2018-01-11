@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>동굴모니터링시스템</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/common.js"></script>
+
+    </head>
+
+    <body class="sub">
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+        </div>
+        <!-- E:skip_navi -->
+
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="">동굴모니터링</a>
+                </h1>
+                <button class="menu">
+                    <i class="icon-menu"></i>메뉴토글</button>
+
+                <nav>
+                    <button class="logout">Logout</button>
+                    <ul>
+                        <li>
+                            <a href="">동굴별데이터</a>
+                        </li>
+                        <li>
+                            <a href="">CCTV</a>
+                        </li>
+                        <li>
+                            <a href="">공지사항</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- S:content -->
+        <div id="content" class="sub">
+            <div class="container">
+                <fieldset class="sort">
+                    <legend class="sr-only">동굴데이터 정렬</legend>
+
+                    <label for="caveName">동굴선택</label>
+                    <select id="caveName">
+                        <option>동굴선택</option>
+                    </select>
+
+                    <label for="sensor">센서선택</label>
+                    <select id="sensor">
+                        <option>센서선택</option>
+                    </select>
+
+                    <p class="date">
+                        <input type="text">
+                        <button><i class="icon-calendar"></i>날짜선택</button>
+                    </p>
+                    <p class="type">
+                        <input id="type01" type="radio" name="type" checked><label for="type01">전체보기</label>
+                        <input id="type02" type="radio" name="type"><label for="type02">외부함체</label>
+                        <input id="type03" type="radio" name="type"><label for="type03">내부함체</label>
+                    </p>
+
+                </fieldset>
+            </div>
+
+        </div>
+        <!-- E:content -->
+        <!-- S:footer -->
+        <footer id="footer" class="intro">
+            <p class="copyright">Copyright 2017 제주특별자치도. All right reserved</p>
+
+        </footer>
+        <!-- E:footer -->
+    </body>
+
+</html>
