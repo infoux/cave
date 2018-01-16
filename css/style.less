@@ -452,19 +452,22 @@ body.screen {
             h1 {
                 .mapazero;
                 .inline-block;
-                .center;
                 font-size: 3.6vw;
                 font-weight: 200;
 
                 P {
-                    margin: 1vh 0 2vh;
+                    margin: 1vh 0 0;
                 }
 
                 small {
                     .block;
                     .center;
+                    .absolute;
+                    right:2vw;
+                    top:2vh;
                     height: 2em;
-                    width: 16vw;
+                    
+                    min-width: 14vw;
                     line-height: 2em;
                     border-radius: 1em;
                     margin: 0.6em 0 0;
@@ -476,6 +479,35 @@ body.screen {
                         color: @white;
                         .normal;
                     }
+                }
+            }
+
+            nav.viewSub {
+                .absolute;
+                left:1.8vw;
+                top:16vh;
+                
+                border-top:2px solid #999;
+
+                button {
+                    .block;
+                    .left;
+                    border:none;
+                    border-bottom:1px solid #666;
+                    color:#fff;
+                    background:none;
+                    padding:1vw 0;
+                    font-size: 0.8vw;
+                    min-width:10vw;
+                    outline:none;
+
+                    &:hover {
+                        .center;
+                        background:#000;
+                        border-color:transparent;
+
+                    }
+
                 }
             }
 
@@ -558,16 +590,20 @@ body.screen {
                 .mapazero;
                 .absolute;
                 .no-list;
-                left: 2vw;
-                bottom: 1vh;
+                right: 2vw;
+                top: 7vh;
 
                 li {
                     .block;
-                    min-width: 16vw;
+                    .center;
+                    height: 2em;
+                    
+                    min-width: 14vw; 
+                    line-height: 2em;
                     background: red;
-                    padding: 0.8vw;
-                    border-radius: 0.4vw;
+                    border-radius: 0.8vw;
                     margin-top: 0.4vh;
+                    font-size:0.8vw;
                     animation: blinker 0.6s linear infinite;
                 }
                 @keyframes blinker {
@@ -588,6 +624,7 @@ body.screen {
             nav {
                 .zero;
                 button {
+                    .top;
                     color: #555;
                     font-size: 1vw;
                     border: none;
@@ -610,19 +647,18 @@ body.screen {
             div.cavedata {
                 .none;
                 height: calc(~"100vh - 8vh");
-                padding: 0 1.4vw;
+
 
                 &.active {
                     .block;
                 }
 
                 ul.subtab {
-                    background: #333;
+                    background: #222;
                     color: #fff;
                     font-size: 1vw;
-                    margin: 2vh 0;
-                    border-radius: 1.9vh;
-                    padding: 0 1.4vw;
+                    margin: 0;
+                    padding: 1.6vh 1.4vw;
 
                     li {
                         .no-list;
@@ -649,8 +685,8 @@ body.screen {
                                 width: 0.8vw;
                                 height: 0.8vw;
                                 margin-right: 0.4vw;
-                                border-radius: 0.5vw;
-                                border: 0.3vw solid #666;
+                                border-radius: 0.3vw;
+                                border: 0.2vw solid #666;
                                 background: #333;
                             }
                         }
@@ -659,7 +695,7 @@ body.screen {
                             color: #fff;
                             &::before {
                                 background: #fff;
-                                border-color: #222;
+                                border-color: #000;
                             }
                         }
                     }
@@ -667,24 +703,35 @@ body.screen {
 
                 div.nowdata {
 
-                    padding: 0;
-                    height: 36vh;
+                    padding: 1vw;
+                    height: 37.2vh;
                     .zero;
                     overflow-y: scroll;
                     -ms-overflow-style: -ms-autohiding-scrollbar;
                     .center;
 
+                    &::-webkit-scrollbar {
+                        background-color:#000;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background:#333;
+                    }
+
                     p {
                         display: inline-block;
                         .center;
-                        width: 7.6vw;
-                        height: 7.6vw;
+                        .top;
+                        width: 6vw;
+                        height: 6vw;
                         border: 0.2vw solid #999;
                         color: #999;
-                        font-size: 1vw;
+                        font-size: 0.8vw;
                         border-radius: 50%;
                         padding-top: 1.4vw;
                         margin: 0 0.2vw 0.5vw;
+
+
 
                         &.temp {
                             border-color: #efb001;
@@ -777,6 +824,7 @@ body.screen {
 
                 div.sortdata {
                     .none;
+                    padding:1.4vw;
                     background: #333;
 
                     &.active {
