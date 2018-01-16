@@ -35,6 +35,9 @@ $(document).ready(function() {
     $("body").removeClass("menuOn");
   });
 
+  $(".screen-sub header nav button.active").on("click", function() {
+    $(this).parent().toggleClass("on");
+  });
 
 try {
 

@@ -463,10 +463,10 @@ body.screen {
                     .block;
                     .center;
                     .absolute;
-                    right:2vw;
-                    top:2vh;
+                    right: 2vw;
+                    top: 2vh;
                     height: 2em;
-                    
+
                     min-width: 14vw;
                     line-height: 2em;
                     border-radius: 1em;
@@ -484,27 +484,27 @@ body.screen {
 
             nav.viewSub {
                 .absolute;
-                left:1.8vw;
-                top:16vh;
-                
-                border-top:2px solid #999;
+                left: 1.8vw;
+                top: 16vh;
+
+                border-top: 2px solid #999;
 
                 button {
                     .block;
                     .left;
-                    border:none;
-                    border-bottom:1px solid #666;
-                    color:#fff;
-                    background:none;
-                    padding:1vw 0;
+                    border: none;
+                    border-bottom: 1px solid #666;
+                    color: #fff;
+                    background: none;
+                    padding: 1vw 0;
                     font-size: 0.8vw;
-                    min-width:10vw;
-                    outline:none;
+                    min-width: 10vw;
+                    outline: none;
 
                     &:hover {
                         .center;
-                        background:#000;
-                        border-color:transparent;
+                        background: #000;
+                        border-color: transparent;
 
                     }
 
@@ -591,19 +591,19 @@ body.screen {
                 .absolute;
                 .no-list;
                 right: 2vw;
-                top: 7vh;
+                top: 7.4vh;
 
                 li {
                     .block;
                     .center;
                     height: 2em;
-                    
-                    min-width: 14vw; 
+
+                    min-width: 14vw;
                     line-height: 2em;
                     background: red;
                     border-radius: 0.8vw;
                     margin-top: 0.4vh;
-                    font-size:0.8vw;
+                    font-size: 0.8vw;
                     animation: blinker 0.6s linear infinite;
                 }
                 @keyframes blinker {
@@ -647,7 +647,6 @@ body.screen {
             div.cavedata {
                 .none;
                 height: calc(~"100vh - 8vh");
-
 
                 &.active {
                     .block;
@@ -711,11 +710,11 @@ body.screen {
                     .center;
 
                     &::-webkit-scrollbar {
-                        background-color:#000;
+                        background-color: #000;
                     }
 
                     &::-webkit-scrollbar-thumb {
-                        background:#333;
+                        background: #333;
                     }
 
                     p {
@@ -730,8 +729,6 @@ body.screen {
                         border-radius: 50%;
                         padding-top: 1.4vw;
                         margin: 0 0.2vw 0.5vw;
-
-
 
                         &.temp {
                             border-color: #efb001;
@@ -824,7 +821,7 @@ body.screen {
 
                 div.sortdata {
                     .none;
-                    padding:1.4vw;
+                    padding: 1.4vw;
                     background: #333;
 
                     &.active {
@@ -838,6 +835,223 @@ body.screen {
             background: url("../images/cctv.png") no-repeat center / 100% 100%;
         }
 
+    }
+}
+
+body.screen-sub {
+    width: 100%;
+    overflow:hidden;
+    background: #262626;
+    .zero;
+
+    header {
+        .fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 6vh;
+        background: #000;
+
+        button.home {
+            .top;
+            height:6vh;
+            .mapazero;
+            width:6vh;
+            background:#444;
+            border:none;
+            outline:none;
+
+            i {
+                font-size:1.8vw;
+                .top;
+                color:#fff;
+            }
+        }
+
+        h1 {
+            .inline-block;
+            .top;
+            font-size: 1.4vw;
+            color: #fff;
+            .normal;
+            margin: 0;
+            padding: 0 0 0 1vw;
+            line-height: 6vh;
+
+            i {
+                margin-left:1vw;
+            }
+        }
+
+        nav {
+            .inline-block;
+            margin: 0.8vh 0 0;
+
+            button {
+                .none;
+                .left;
+                border: none;
+                margin: 0 0 1px;
+                font-size: 1.4vw;
+                padding: 0.3em 0 0.3em 0.6em;
+                color: #999;
+                background: #333;
+                min-width:9vw;
+                outline:none;
+
+                i {
+                    .none;
+                }
+
+                &:hover {
+                    background:#555;
+                    color:#fff;
+                }
+
+                &.active {
+                    .block;
+                    color: #f1b000;
+                    background: transparent;
+
+                    i {
+                        .inline-block;
+                    }
+                }
+            }
+
+            &.on {
+                button {
+                    .block;
+
+                    &.active {
+                        background:#0055b5;
+                        color:#fff;
+                    }
+
+                }
+            }
+
+        }
+
+        ul.tabs {
+            .absolute;
+            right:0;
+            top:0;
+            font-size:1vw;
+            .zero;
+            background:#212121;
+            height:5vh;
+            padding:0.5vh;
+            margin:0.5vh 1vw 0.5vh 0.5vh;
+            border-radius:0.5vh;
+
+            li {
+                .inline-block;
+                button {
+                    margin:0;
+                    font-size:1.2vw;
+                    height:4vh;
+                    padding:0 1vw;
+                    border:none;
+                    background:none;
+                    color:#999;
+                    border-radius:0.4vh;
+                    outline:none;
+
+                    &.active {
+                        background:#0055b5;
+                        color:#fff;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    div.data-set {
+        margin:6vh 0 0 20px;
+        .zero;
+
+        section.data {
+            .inline-block;
+            font-size:1vw;
+            width:calc(~"50vw - 30px");
+            height:calc(~"50vh - 3vh");
+            margin-right:20px;
+
+            h1 {
+                font-size:1vw;
+                color:#fff;
+                .normal;
+
+                p {
+                    .inline-block;
+                    .top;
+                    margin:0;
+                    height:2.5vw;
+                    line-height:2.5vw;
+
+                    &.icon {
+                        .inline-block;
+                        .center;
+                        width:2.5vw;
+                        height:2.5vw;
+                        border-radius:50%;
+                        background:#000;
+                        color:#fff;
+                        margin-right:0.4vw;
+                        font-size:1.4em;
+                        padding:0.1em 0 0;
+
+                        &.data01 {
+                            background:#0055b5
+                        }
+                        &.data02 {
+                            background:#00aeea;
+                        }
+                        &.data03 {
+                            background:#669900;
+                        }
+
+                        &.data04 {
+                            background:#555;
+                        }
+
+                        &.data05 {
+                            background:#9966CC;
+                        }
+
+                        &.data06 {
+                            background:#996633;
+                        }
+
+                        &.data07 {
+                            background:#336699;
+                        }
+
+                        &.data08 {
+                            background:#CC6699;
+                        }
+
+                        &.data09 {
+                            background:#6699CC;
+                        }
+
+                        &.data10 {
+                            background:#CC9966;
+                        }
+
+                        &.data11 {
+                            background:#336666;
+                        }
+
+                        &.data12 {
+                            background:#6666CC;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1689,7 +1903,7 @@ body.sub {
                     .left;
                     line-height: 1.4;
                     border-top: 2px solid @gray;
-                    border-bottom:1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
 
                     img {
                         max-width: 100%;
@@ -1706,18 +1920,18 @@ body.sub {
                     .rem(margin, 20 0 30);
                     a {
                         .inline-block;
-                        background:#555;
-                        color:#fff;
+                        background: #555;
+                        color: #fff;
                         .rem(height, 30);
                         .rem(line-height, 30);
                         .rem(padding, 0 20);
                         .rem(border-radius, 6);
 
                         @media all and (min-width: 1200px) {
-                            height:42px;
-                            line-height:42px;
-                            padding:0 30px;
-                            font-size:18px;
+                            height: 42px;
+                            line-height: 42px;
+                            padding: 0 30px;
+                            font-size: 18px;
                         }
 
                     }
