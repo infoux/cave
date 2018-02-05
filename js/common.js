@@ -76,4 +76,36 @@ try {
       return false;
     });
 
+
+    if ($("body").hasClass("screen-sub")) {
+
+      $('.input-date').dateRangePicker({
+        separator: ' ~ ',
+        language: 'ko',
+        getValue: function () {
+          return $(this).find("strong").html();
+        },
+        setValue: function (s) {
+          $(this).find("strong").html(s);
+        }
+  
+      });
+  
+    }
+
+    $(".screen-sub .icon-resize-full").on("click", function() {
+      
+      $(this).parent().parent().addClass("active");
+      $(".screen-sub .data-set section").addClass("full");
+
+    });
+
+
+    $(".screen-sub .icon-resize-small").on("click", function() {
+      
+      $(this).parent().parent().removeClass("active");
+      $(".screen-sub .data-set section").removeClass("full");
+
+    });
+
 });
