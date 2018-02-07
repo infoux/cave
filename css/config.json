@@ -229,6 +229,42 @@
       "css": "resize-small",
       "code": 59403,
       "src": "fontawesome"
+    },
+    {
+      "uid": "053a1eaf96184e74876f45bd0f4970eb",
+      "css": "na",
+      "code": 59405,
+      "src": "meteocons"
+    },
+    {
+      "uid": "95fb2e5fdd1ea7e4a420b6ed330e6b08",
+      "css": "sun",
+      "code": 59410,
+      "src": "meteocons"
+    },
+    {
+      "uid": "17463471d0f132cee16835507ea51ecf",
+      "css": "cloud",
+      "code": 59411,
+      "src": "meteocons"
+    },
+    {
+      "uid": "127ed05f3c024a9c73487f18cf3d530d",
+      "css": "snow",
+      "code": 59412,
+      "src": "meteocons"
+    },
+    {
+      "uid": "d577552bb94bdeb53e6517873481aeea",
+      "css": "rain",
+      "code": 59413,
+      "src": "meteocons"
+    },
+    {
+      "uid": "c709da589c923ba3c2ad48d9fc563e93",
+      "css": "cancel",
+      "code": 59414,
+      "src": "entypo"
     }
   ]
 }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>동굴모니터링시스템</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+
+        <script src="js/moment-with-locales.min.js"></script>
+        <script src="js/jquery.daterangepicker.js"></script>
+
+        <script src="js/common.js"></script>
+
+    </head>
+
+    <body class="cave-map cave01">
+        <!-- S:content -->
+
+        <div class="weather">
+            <h1>당처물굴</h1>
+
+            <h2>당처물굴 외부 날씨</h2>
+            <p class="txt">맑음</p>
+            <p class="temp">
+                <strong>7</strong>℃</p>
+            <i class="icon-sun"></i>
+        </div>
+
+        <div class="map cave1">
+
+            <ul>
+                <li class="enter">입구</li>
+                <li class="sensor1">
+                    <a class="icon data06" href="#">
+                        <i class="icon-data06"></i>
+                        30m 균열감지
+                    </a>
+
+                    <div class="data">
+
+                        <p>2.302mm</p>
+                        <h3>30m 지점 균열감지 센서</h3>
+                    </div>
+
+                </li>
+                <li class="sensor2">
+                    <a class="icon data01" href="#">
+                        <i class="icon-data01"></i>
+                        50m 온도
+                    </a>
+
+                    <div class="data">
+
+                        <p>4℃</p>
+                        <h3>50m 지점 온도센서</h3>
+                    </div>
+
+                </li>
+                <li class="sensor3">
+                    <a class="icon data02" href="#">
+                        <i class="icon-data02"></i>
+                        50m 습도
+                    </a>
+
+                    <div class="data">
+
+                        <p>99%</p>
+                        <h3>50m 지점 습도센서</h3>
+                    </div>
+
+                </li>
+                <li class="sensor4">
+                    <a class="icon data03" href="#">
+                        <i class="icon-data03"></i>
+                        50m CO2
+                    </a>
+
+                    <div class="data">
+
+                        <p>411ppm</p>
+                        <h3>50m 지점 CO2센서</h3>
+                    </div>
+                </li>
+
+                <li class="sensor5">
+                    <a class="icon data10" href="#">
+                        <i class="icon-data10"></i>
+                        50m 라돈
+                    </a>
+
+                    <div class="data">
+
+                        <p>57.83pCi/L</p>
+                        <h3>50m 지점 라돈센서</h3>
+                    </div>
+                </li>
+
+                <li class="sensor6">
+                    <a class="icon data08" href="#">
+                        <i class="icon-data08"></i>
+                        50m PH
+                    </a>
+
+                    <div class="data">
+
+                        <p>7.04ph</p>
+                        <h3>50m 지점 PH센서</h3>
+                    </div>
+                </li>
+
+                <li class="sensor7">
+                    <a class="icon data09" href="#">
+                        <i class="icon-data09"></i>
+                        50m 수온
+                    </a>
+
+                    <div class="data">
+
+                        <p>19℃</p>
+                        <h3>50m 지점 수온센서</h3>
+                    </div>
+                </li>
+
+                <li class="sensor8">
+                    <a class="icon data11" href="#">
+                        <i class="icon-data11"></i>
+                        50m 전기전도도
+                    </a>
+
+                    <div class="data">
+
+                        <p>19℃</p>
+                        <h3>50m 지점 전기전도도센서</h3>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+                <!-- 
+
+                    <a class="icon data12">
+                        <i class="icon-data12"></i>
+                    </a>
+
+                    온도 : data01
+                    습도 : data02
+                    CO2 : data03
+                    진동 : data04
+                    소음 : data05
+                    균열 : data06
+                    수위 : data07
+                    ph : data08
+                    수온 : data09
+                    라돈 : data10
+                    전기전도도 : data11
+                    염도 : data12
+
+                    30m : 균열
+                    50m : 온도, 습도, co2, 라돈, ph, 수온, 전기전도도
+                -->
+        <div class="btn-set">
+            <a href="intro.html">
+                <i class="icon-angle-left"></i>뒤로</a>
+            <a href="screen.html">
+                <i class="icon-home"></i>대시보드</a>
+        </div>
+
+        <div class="modal">
+            <div class="head">
+                <p class="icon data01">
+                    <i class="icon-data01"></i>
+                </p>
+                <h2>온도
+                    <small>단위 ℃</small>
+                </h2>
+
+                <button class="input-date">
+                    <i class="icon-calendar"></i>
+                    <strong>기간선택</strong>
+                </button>
+                <button class="close">
+                    <i class="icon-cancel"></i>닫기</button>
+            </div>
+            <div class="data">
+                <!-- 챠트를 넣어주세요 -->
+            </div>
+        </div>
+        <!-- E:content -->
+    </body>
+
+</html>

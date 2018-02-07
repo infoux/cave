@@ -11,6 +11,9 @@ $(document).ready(function() {
 
     $("#map").removeAttr("class");
     $("#map").addClass(switchon);
+    $("#map .cave-map").removeClass("active");
+    $("#map .cave-map."+ switchon).addClass("active");
+
 
     $("h1 p").html($(this).html());
 
@@ -76,8 +79,7 @@ try {
       return false;
     });
 
-
-    if ($("body").hasClass("screen-sub")) {
+    try {
 
       $('.input-date').dateRangePicker({
         separator: ' ~ ',
@@ -90,9 +92,9 @@ try {
         }
   
       });
-  
-    }
 
+    } catch(e) {}
+  
     $(".screen-sub .icon-resize-full").on("click", function() {
       
       $(this).parent().parent().addClass("active");
@@ -108,4 +110,19 @@ try {
 
     });
 
+
+    $(".cave-map .map a").on("mouseenter", function() {
+      $(".cave-map .map li").removeAttr("style");
+      $(this).parent().css("z-index", "10");
+
+    });
+
+    $(".modal .head .close").on("click", function() {
+      $(".modal").toggle();
+    });
+
+    /* 임시코드 */
+    $(".cave-map li a").on("click", function() {
+      $(".modal").toggle();
+    });
 });
