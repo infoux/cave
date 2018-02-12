@@ -1560,7 +1560,7 @@ body.screen {
                 }
             }
         }
-
+/*
         &.tabdata {
             .absolute;
             right: 0;
@@ -1717,6 +1717,255 @@ body.screen {
 
             }
         }
+*/
+
+
+
+&.tabdata {
+    .absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: #1b1b1b;
+
+    nav {
+        .zero;
+        white-space:nowrap;
+        .hidden;
+        button {
+            .top;
+            color: #555;
+            font-size: 1vw;
+            border: none;
+            background: none;
+            width: calc(~"100% / 5");
+            height: 6vh;
+            background: #000;
+            outline: none;
+
+            &.active {
+                background: none;
+                font-size: 1.6vw;
+                color: #f1b000;
+                border-bottom: 0.3vh solid #f1b000;
+
+            }
+        }
+    }
+
+    div.cavedata {
+        .none;
+        height: calc(~"100vh - 8vh");
+
+        &.active {
+            .block;
+        }
+
+        ul.subtab {
+            background: #222;
+            color: #fff;
+            font-size: 1vw;
+            margin: 0;
+            padding: 1.6vh 1.4vw;
+
+            li {
+                .no-list;
+                .inline-block;
+                height: 3.8vh;
+                line-height: 3.8vh;
+                margin-right: 1.4vw;
+
+                input {
+                    .none;
+                }
+
+                label {
+                    .inline-block;
+                    cursor: pointer;
+
+                    color: #777;
+                    
+                    &::before {
+                        content: "";
+                        .inline-block;
+                        .relative;
+                        top: 0.5vh;
+                        width: 0.8vw;
+                        height: 0.8vw;
+                        margin-right: 0.4vw;
+                        border-radius: 0.3vw;
+                        border: 0.2vw solid #666;
+                        background: #333;
+                    }
+                }
+
+                input:checked + label {
+                    color: #fff;
+                    &::before {
+                        background: #fff;
+                        border-color: #000;
+                    }
+                }
+            }
+        }
+
+        div.nowdata {
+
+            
+            padding: 1vw;
+            height: 37.2vh;
+            .zero;
+            overflow-y: scroll;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            .center;
+
+            &::-webkit-scrollbar {
+                background-color: #000;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #333;
+            }
+
+            p {
+                display: inline-block;
+                .center;
+                .top;
+                width: 5vw;
+                height: 5vw;
+                border: 0.2vw solid #999;
+                color: #999;
+                font-size: 0.6vw;
+                border-radius: 50%;
+                padding-top: 1vw;
+                margin: 0 0.2vw 0.5vw;
+                .hidden;
+
+                span {
+                    .block;
+                    font-size:0.6vw;
+                    background:#999;
+                    color:#212121;
+                    padding:0.4vh 1vh 1vh;
+                }
+
+                &.temp {
+                    border-color: #efb001;
+                    color: #efb001;
+
+                    span {
+                        background:#efb001;
+                    }
+                }
+
+                &.humidity {
+                    border-color: #00aeea;
+                    color: #00aeea;
+                    span {
+                        background:#00aeea;
+                    }
+                }
+
+                &.co2 {
+                    border-color: #a8c200;
+                    color: #a8c200;
+                    span {
+                        background:#a8c200;
+                    }
+                }
+                &.e,
+                &.w {
+                    background: red;
+                    color: #fff;
+                    border: none;
+
+                    strong {
+                        font-size: 1.4em;
+                    }
+                    span {
+                        background:#212121;
+                        color:red;
+                        margin-top:0.8vh;
+                        .opacity(0.8);
+                    }
+                }
+
+                strong {
+                    .block;
+                    margin-top: 0.3em;
+                    font-size: 1.8em;
+
+                    u {
+                        text-decoration: none;
+                        font-size: 0.6em;
+                        .normal;
+                    }
+                }
+
+
+                i {
+                    font-style: normal;
+                    font-size: 0.6em;
+                    color: #666;
+                }
+            }
+        }
+
+        ul.tabs {
+            .center;
+            padding: 2vh 0;
+            margin: 0 0 1vh;
+            .no-list;
+
+            .zero;
+            li {
+                .inline-block;
+
+                button {
+                    .inline-block;
+                    color: @white;
+                    border: none;
+                    margin: 0;
+                    padding: 0 2vw;
+                    height: 5vh;
+                    line-height: 5vh;
+                    background: #000;
+                    color: #666;
+
+                    font-size: 1.2vw;
+                    outline: none;
+
+                    &.active {
+                        background: #333;
+                        color: #fff;
+                    }
+                }
+
+                &:first-child {
+                    button {
+                        border-radius: 0.6vw 0 0 0.6vw;
+                    }
+                }
+
+                &:last-child {
+                    button {
+                        border-radius: 0 0.6vw 0.6vw 0;
+                    }
+                }
+            }
+        }
+
+        div.sortdata {
+            .none;
+            padding: 1.4vw;
+            background: #333;
+
+            &.active {
+                .block;
+            }
+        }
+    }
+}
 
         &.cctv {
             background: url("../images/cctv.png") no-repeat center / 100% 100%;
