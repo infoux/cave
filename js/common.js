@@ -114,8 +114,9 @@ try {
     $(".cave-map .map a").on("mouseenter", function() {
       $(".cave-map .map li").removeAttr("style");
       $(this).parent().css("z-index", "10");
-
     });
+
+
 
     $(".modal .head .close").on("click", function() {
       $(".modal").toggle();
