@@ -405,7 +405,7 @@ button.input-date {
 
             
     .absolute;
-    left:20vw;
+    left:30vw;
     top:0;
     font-size:1vw;
     background:#212121;
@@ -756,9 +756,17 @@ body.intro {
         .absolute;
         left:4vw;
         top:6vh;
-
         font-size:0.3vw;
 
+        h2 {
+            font-size:1vw;
+
+            small {
+                .block;
+                margin:0.2vw 0 0 0;
+                font-size:0.6vw;
+            }
+        }
         p.txt {
             font-size:1vw;
             margin:1vh 0 0;
@@ -774,8 +782,8 @@ body.intro {
 
         i {
             .absolute;
-            left:3.5vw;
-            top:12vh;
+            left:3.8vw;
+            top:17vh;
             font-size:6vw;
 
         }
@@ -910,7 +918,16 @@ body.intro {
         }
 
 
-        font-size:0.6vw;
+
+        h2 {
+            font-size:1vw;
+
+            small {
+                .block;
+                margin:0.2vw 0 0 0;
+                font-size:0.6vw;
+            }
+        }
 
         p.txt {
             font-size:1vw;
@@ -928,7 +945,7 @@ body.intro {
         i {
             .absolute;
             left:5vw;
-            top:15vh;
+            top:17vh;
             font-size:6vw;
 
         }
@@ -1758,11 +1775,12 @@ body.screen {
 
     div.cavedata {
         .none;
-        height: calc(~"100vh - 8vh");
+        height: calc(~"100vh - 6vh");
 
         &.active {
             .block;
         }
+
 
         ul.subtab {
             background: #222;
@@ -1816,11 +1834,16 @@ body.screen {
 
             
             padding: 1vw;
-            height: 37.2vh;
+            height: auto;
+            max-height:100%;
+
+                    
+        overflow-y: scroll;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        .center;
+
             .zero;
-            overflow-y: scroll;
-            -ms-overflow-style: -ms-autohiding-scrollbar;
-            .center;
+
 
             &::-webkit-scrollbar {
                 background-color: #000;

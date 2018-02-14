@@ -265,6 +265,30 @@
       "css": "cancel",
       "code": 59414,
       "src": "entypo"
+    },
+    {
+      "uid": "9cd3e294ca3ad3dda66bc5a804021c46",
+      "css": "cloud-sun",
+      "code": 59415,
+      "src": "meteocons"
+    },
+    {
+      "uid": "b215adc51ca2aa37e7bbe244d1fa52cc",
+      "css": "clouds",
+      "code": 59416,
+      "src": "meteocons"
+    },
+    {
+      "uid": "9af2b75a89bd99b83457f041df26da8b",
+      "css": "cloud-flash-alt",
+      "code": 59417,
+      "src": "meteocons"
+    },
+    {
+      "uid": "a555120b3743d482efcc3058733d3fd9",
+      "css": "mist",
+      "code": 59418,
+      "src": "meteocons"
     }
   ]
 }
