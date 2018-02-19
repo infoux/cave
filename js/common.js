@@ -96,7 +96,6 @@ try {
     } catch(e) {}
   
     $(".screen-sub .icon-resize-full").on("click", function() {
-      
       $(this).parent().parent().addClass("active");
       $(".screen-sub .data-set section").addClass("full");
 
@@ -122,8 +121,26 @@ try {
       $(".modal").toggle();
     });
 
+
+
+
+    $(".screen-sub.sensor div.check").on("mouseenter", function() {
+        $(this).addClass("open");
+    });
+    $(".screen-sub.sensor div.check").on("mouseleave", function() {
+      $(this).removeClass("open");
+  });
+
+
+
+
+
+
     /* 임시코드 */
     $(".cave-map li a").on("click", function() {
       $(".modal").toggle();
     });
+
+
+
 });

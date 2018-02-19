@@ -2049,6 +2049,7 @@ body.screen-sub {
         nav {
             .inline-block;
             margin: 0.8vh 0 0;
+            .top;
 
             button {
                 .none;
@@ -2240,57 +2241,116 @@ body.screen-sub {
                     }
 
             }
+
+            &#data-full {
+                width:100%;
+                height: calc(100vh - 3vh);
+                margin-left:-20px;
+                padding:1vw;
+
+                overflow-y: scroll;
+                -ms-overflow-style: -ms-autohiding-scrollbar;
+            }
         }
     }
 
 
+&.sensor {
+    header {
+        button.input-date {
+            position:relative;
+            left:0;
+            
+            margin: 1vh 0.4vw;
+            .top;
+        }
+    
+        div.check {
+            .inline-block;
+            .top;
+            font-size: 1vw;
+            background: #212121;
+            height: 4vh;
+            padding: .5vh 0;
+            margin: 1vh 0.4vw;
+            border-radius: .5vh;
+            color: #999;
+            border: none;
+            h2 {
+                .mapazero;
+                .block;
+                .top;
+                font-size:1vw;
+                line-height:3vh;
+                .center;
+                width:8vw;
+                margin:0 0 0.6vh;
+                
+            }
+
+            input {
+                .none;
+            }
+
+            label {
+                .none;
+                .top;
+            }
+
+            input:checked + label {
+            }
 
 
+            &.open {
+                
+                label {
+                    .block;
+                    background:#444;
+                    color:#ccc;
+                    width:100%;
+                    padding:0.5vw;
+                    
 
+                    &::before {
+                        content:"";
+                        .inline-block;
+                        .relative;
+                        top:0.2vw;
+                        width:0.4vw;
+                        height:0.4vw;
+                        margin-right:0.4vw;
+                        background:#222;
+                        border-radius:0.2vw;
+                        
+                        border:0.3vw solid transparent;
+                    }
 
+                    &:first-of-type {
+                        border-radius:0.5vh 0.5vh 0 0;
+                    }
 
+                    &:last-of-type {
+                        border-radius:0 0 0.5vh 0.5vh;
+                    }
 
+                }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                input:checked + label {
+                    &::before {
+                        background:#f1b000;
+                        border:0.3vw solid #000;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
 }
+
+
 
 /* login style */
 body.login {

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>동굴모니터링시스템</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        
+        <script src="js/moment-with-locales.min.js"></script>
+        <script src="js/jquery.daterangepicker.js"></script>
+        <script src="js/common.js"></script>
+
+    </head>
+
+    <body class="screen-sub sensor">
+
+        <header>
+            <button class="home">대시보드화면으로 돌아가기 <i class="icon-home"></i></button>
+            <h1>센서별 상세 보기<i class="icon-angle-right"></i>
+            </h1>
+            <nav>
+                <button data="cave01" class="cave cave01 active">당처물굴
+                    <i class="icon-angle-circled-down"></i>
+                </button>
+                <button data="cave02" class="cave cave02">용천굴
+                    <i class="icon-angle-circled-down"></i>
+                </button>
+                <button data="cave03" class="cave cave03">김녕굴
+                    <i class="icon-angle-circled-down"></i>
+                </button>
+                <button data="cave04" class="cave cave04">만장굴
+                    <i class="icon-angle-circled-down"></i>
+                </button>
+                <button data="cave05" class="cave cave05">벵뒤굴
+                    <i class="icon-angle-circled-down"></i>
+                </button>
+            </nav>
+
+            <div class="check">
+                <h2>함체선택</h2>
+                <input id="box-type01" type="checkbox" checked><label for="box-type01">외부함체</label>
+                <input id="box-type02" type="checkbox"><label for="box-type02">내부함체</label>
+            </div>
+
+            <div class="check">
+                    <h2>센서타입 선택</h2>
+                    <input id="sensor-type01" type="checkbox" checked><label for="sensor-type01">온도</label>
+                    <input id="sensor-type02" type="checkbox"><label for="sensor-type02">습도</label>
+                    <input id="sensor-type03" type="checkbox"><label for="sensor-type03">이산화탄소</label>
+                    <input id="sensor-type04" type="checkbox"><label for="sensor-type04">진동</label>
+                    <input id="sensor-type05" type="checkbox"><label for="sensor-type05">소음</label>
+                    <input id="sensor-type06" type="checkbox"><label for="sensor-type06">균열</label>
+                    <input id="sensor-type07" type="checkbox"><label for="sensor-type07">수위</label>
+                    <input id="sensor-type08" type="checkbox"><label for="sensor-type08">ph</label>
+                    <input id="sensor-type09" type="checkbox"><label for="sensor-type09">수온</label>
+                    <input id="sensor-type10" type="checkbox"><label for="sensor-type10">라돈</label>
+                    <input id="sensor-type11" type="checkbox"><label for="sensor-type11">전기전도도</label>
+                    <input id="sensor-type12" type="checkbox"><label for="sensor-type12">염도</label>
+                </div>
+
+
+            <button class="input-date"><i class="icon-calendar"></i><strong>기간선택</strong></button>
+        </header>
+
+        <div class="data-set">
+
+            <section id="data-full" class="data">
+                <h1>
+                    <p class="icon data01">
+                        <i class="icon-data01"></i>
+                    </p>
+                    <p>온도</p>
+
+                </h1>
+                
+            </section>
+
+
+            <!-- 
+
+                <p class="icon data12">
+                    <i class="icon-data12"></i>
+                </p>
+
+                온도 : data01
+                습도 : data02
+                CO2 : data03
+                진동 : data04
+                소음 : data05
+                균열 : data06
+                수위 : data07
+                ph : data08
+                수온 : data09
+                라돈 : data10
+                전기전도도 : data11
+                염도 : data12
+
+
+            -->
+
+            <p style="font-size:1vw;">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </p>
+        </div>
+    </body>
+
+</html>
