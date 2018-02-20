@@ -2358,6 +2358,58 @@ body.screen-sub {
             border: none;
         }
     }
+
+    .data-set {
+        ul.grid {
+            .zero;
+            padding:2vh 1vw;
+            margin:0;
+            .no-list;
+
+            li.item {
+                font-size:1vw;
+                .inline-block;
+                background:#444;
+                margin:0 10px 20px;
+                border-radius:0.6vw;
+                height:20vh;
+                padding:0.8vw;
+
+                &.width01 {
+                    width:calc(~"(100% - 60px) / 3");
+                }
+
+                &.width02 {
+                    width:calc(~"(100% - 30px) / 3 * 2");
+                }
+
+                &.width03 {
+                    width:calc(~"100% - 20px");
+                }
+
+                h2 {
+                    margin:0;
+                    color:@white;
+
+                    p {
+                        .inline-block;
+                        margin:0;
+                        font-size:1.2vw;
+                        line-height:2.4vw;
+
+                        &.icon {
+                            margin-right:0.4vw;
+                        }
+
+                        i {
+                            font-size:1.4vw;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 
