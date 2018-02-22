@@ -123,14 +123,12 @@ try {
 
 
 
-
-    $(".screen-sub.sensor div.check").on("mouseenter", function() {
+    $(".screen-sub header div").on("mouseenter", function() {
         $(this).addClass("open");
     });
-    $(".screen-sub.sensor div.check").on("mouseleave", function() {
+    $(".screen-sub header div").on("mouseleave", function() {
       $(this).removeClass("open");
   });
-
 
 
 
