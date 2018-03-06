@@ -1863,22 +1863,8 @@ body.screen {
             padding: 1vw;
             height: auto;
             max-height:100%;
-
-                    
-        overflow-y: scroll;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        .center;
-
+            .center;
             .zero;
-
-
-            &::-webkit-scrollbar {
-                background-color: #000;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background: #333;
-            }
 
             p {
                 display: inline-block;
@@ -1899,7 +1885,7 @@ body.screen {
                     font-size:0.6vw;
                     background:#999;
                     color:#212121;
-                    padding:0.4vh 1vh 1vh;
+                    padding:0.4vh 1vh 1.6vh;
                 }
 
                 &.temp {
@@ -2008,14 +1994,20 @@ body.screen {
             }
         }
 
-        div.sortdata {
-            .none;
-            padding: 1.4vw;
-            background: #333;
+        div.scroll-data {
+            background:#333;
 
-            &.active {
-                .block;
+            padding:1vw;
+            overflow-y: scroll;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            &::-webkit-scrollbar {
+                background-color: #000;
             }
+
+            &::-webkit-scrollbar-thumb {
+                background: #555;
+            }
+
         }
     }
 }
@@ -2050,30 +2042,71 @@ body.screen-sub {
             background:#444;
             border:none;
             outline:none;
+            color:#fff;
 
             i {
                 font-size:1.8vw;
                 .top;
-                color:#fff;
+            }
+
+            &:hover {
+                text-decoration:underline;
+            }
+
+            &.on {
+                font-size:1.8vw;
+                width:auto;
+                padding:0 1vw 0 0;
+
+                i {
+                    font-size:0;
+                }
             }
         }
 
-        h1 {
-            .inline-block;
+        button.intro {
             .top;
-            font-size: 1.4vw;
-            color: #fff;
-            .normal;
-            margin: 0;
-            padding: 0 0 0 1vw;
-            line-height: 6vh;
+            height:6vh;
+            .mapazero;
+            font-size:0;
+            background:#444;
+            border:none;
+            outline:none;
+            color:#fff;
 
-            i {
-                margin-left:1vw;
+            &:hover {
+                text-decoration:underline;
+            }
+            &.on {
+                font-size:1.8vw;
+                width:auto;
+                padding:1vw;
+
+
             }
         }
 
-        nav {
+        button.input-date {
+            position:relative;
+            left:0;
+            margin: 1vh 0.4vw;
+            .top;
+        }
+
+
+            i.icon-angle-right {
+                .inline-block;
+                .top;
+                font-size: 1.4vw;
+                color: #fff;
+                .normal;
+                margin: 0;
+                padding: 0 0 0 1vw;
+                line-height: 6vh;
+            }
+
+        div.select {
+            .top;
             .inline-block;
             line-height:6vh;
             top: 0;
@@ -2091,15 +2124,6 @@ body.screen-sub {
                 border-radius: .5vh;
                 color: #999;
                 border: none;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2443,16 +2467,7 @@ body.screen-sub {
 
 
 &.sensor {
-    header {
-        button.input-date {
-            position:relative;
-            left:0;
-            
-            margin: 1vh 0.4vw;
-            .top;
-        }
 
-    }
 
     .data-set {
         ul.grid {

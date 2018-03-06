@@ -20,10 +20,22 @@
     <body class="screen-sub">
 
         <header>
-            <button class="home">대시보드화면으로 돌아가기 <i class="icon-home"></i></button>
-            <h1>동굴별 상세 보기<i class="icon-angle-right"></i>
-            </h1>
-            <nav>
+            <button class="intro">INTRO</button>
+            <button class="home">DASHBOARD<i class="icon-home"></i></button>
+
+
+
+            <div class="select">
+                <button data="type01" class="type type01 active">동굴별 상세보기
+                    <i class="icon-angle-circled-down"></i>
+                </button>
+                <button data="type02" class="type type02">센서별 상세보기
+                    <i class="icon-angle-circled-down"></i>
+                </button>
+            </div>
+            <i class="icon-angle-right"></i>
+
+            <div class="select">
                 <button data="cave01" class="cave cave01 active">당처물굴
                     <i class="icon-angle-circled-down"></i>
                 </button>
@@ -39,7 +51,7 @@
                 <button data="cave05" class="cave cave05">벵뒤굴
                     <i class="icon-angle-circled-down"></i>
                 </button>
-            </nav>
+            </div>
             <ul class="tabs">
                 <li>
                     <button data="sort01" class="active">환경정보</button>

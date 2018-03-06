@@ -38,7 +38,7 @@ $(document).ready(function() {
     $("body").removeClass("menuOn");
   });
 
-  $(".screen-sub header nav button.active").on("click", function() {
+  $(".screen-sub header div.select button.active").on("click", function() {
     $(this).parent().toggleClass("on");
   });
 
@@ -130,6 +130,26 @@ try {
       $(this).removeClass("open");
   });
 
+  $(".screen .scroll-data").each(function(){
+    var calheight = $(window).height() - $(".tabdata nav").height() - $("ul.subtab").height() - $(".screen .nowdata").height() - 56;
+    $(this).css('height', calheight);
+
+    console.log(calheight);
+  });
+
+
+
+  $(".screen-sub header button.home").on("mouseenter", function() {
+    $(".screen-sub header button.home, .screen-sub header button.intro").addClass("on");
+
+  });
+  $(".screen-sub header button.home").on("mouseleave", function() {
+    setTimeout(function() {
+      $(".screen-sub header button.home, .screen-sub header button.intro").removeClass("on");
+    }, 5000);
+
+
+  });
 
 
 
