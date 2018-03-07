@@ -1323,6 +1323,16 @@ body.intro {
 
             i {
                 font-size:3vw;
+                .top;
+
+                &.icon-home {
+                    font-size:4vw;
+                    
+                    &::before {
+                        .top;
+                        margin-top:-0.4vw;
+                    }
+                }
             }
         }
     }
@@ -1389,15 +1399,15 @@ body.screen {
 
                     a {
 
-                        color:@white;
+                        color:#000;
                         .top;
 
                         i {
                             &:before {
                                     
-                                font-size:1vw;
+                                font-size:1.6vw;
                                 border-radius: 0.2vw;
-                                background: #000;
+                                background: #efb001;
                                 width:2vw;
                                 line-height: 3.4vh;
                                 margin:0 0.2vw 0 0;
@@ -2034,10 +2044,11 @@ body.screen-sub {
         background: #000;
         z-index:800;
 
-        button.home {
+        button.href {
             .top;
             height:6vh;
             .mapazero;
+            padding-top:0.2vw;
             width:6vh;
             background:#444;
             border:none;
@@ -2045,46 +2056,19 @@ body.screen-sub {
             color:#fff;
 
             i {
-                font-size:1.8vw;
+                font-size:1.4vw;
                 .top;
-            }
+                .opacity(0.7);
 
-            &:hover {
-                text-decoration:underline;
-            }
-
-            &.on {
-                font-size:1.8vw;
-                width:auto;
-                padding:0 1vw 0 0;
-
-                i {
-                    font-size:0;
+                &.icon-home {
+                    font-size:1.8vw;
                 }
             }
+
+
+
         }
 
-        button.intro {
-            .top;
-            height:6vh;
-            .mapazero;
-            font-size:0;
-            background:#444;
-            border:none;
-            outline:none;
-            color:#fff;
-
-            &:hover {
-                text-decoration:underline;
-            }
-            &.on {
-                font-size:1.8vw;
-                width:auto;
-                padding:0 1vw;
-
-
-            }
-        }
 
         button.input-date {
             position:relative;

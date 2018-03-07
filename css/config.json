@@ -289,6 +289,12 @@
       "css": "mist",
       "code": 59418,
       "src": "meteocons"
+    },
+    {
+      "uid": "76f961b11f65300838a5a78856aca30f",
+      "css": "th-large",
+      "code": 59419,
+      "src": "elusive"
     }
   ]
 }
