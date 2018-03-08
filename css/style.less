@@ -2057,6 +2057,23 @@ body.screen {
                 padding:0.2vw 0.4vh;
                 .hidden;
 
+
+                &.nosignal {
+                    &::before {
+                        content: "No Signal";
+                        background: #666;
+                        font-size: 1vw;
+                        color: #fff;
+                        .center;
+                        .block;
+                        .absolute;
+                        .full-position;
+                        padding-top: 10vh;
+                        z-index: 100;
+                    }
+                }
+                
+
                 h2 {
                     position: absolute;
                     left: 0;
