@@ -1900,8 +1900,9 @@ body.screen {
             .center;
             .zero;
 
-            p {
+            a {
                 display: inline-block;
+                .relative;
                 .center;
                 .top;
                 width: 5vw;
@@ -1913,6 +1914,22 @@ body.screen {
                 padding-top: 1vw;
                 margin: 0 0.2vw 0.5vw;
                 .hidden;
+
+                i {
+                    .none;
+                }
+
+                &:hover {
+                    i {
+                        .absolute;
+                        .block;
+                        .full-position;
+                        font-size:0.8vw;
+                        color:#333;
+                        padding-top:1.4vw;
+                        background:red;
+                    }
+                }
 
                 span {
                     .block;
@@ -1948,16 +1965,15 @@ body.screen {
                 }
                 &.e,
                 &.w {
-                    background: red;
-                    color: #fff;
-                    border: none;
+                    border-color: red;
+                    color: red;
 
                     strong {
                         font-size: 1.4em;
                     }
                     span {
-                        background:#212121;
-                        color:red;
+                        background:red;
+
                         margin-top:0.8vh;
                         .opacity(0.8);
                     }
