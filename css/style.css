@@ -683,6 +683,36 @@ body.intro div.map ul li a:hover {
   margin: 0.2vw 0 0 0;
   font-size: 0.6vw;
 }
+.cave-map div.weather ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.cave-map div.weather ul li {
+  vertical-align: top;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  min-width: 7vw;
+  padding: 0.8vw;
+  font-size: 0.8vw;
+  margin-right: 2px;
+}
+.cave-map div.weather ul li:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+.cave-map div.weather ul li:last-of-type {
+  border-radius: 0 10px 10px 0;
+}
+.cave-map div.weather ul li h3 {
+  margin: 0 0 1vh;
+  font-size: 1vw;
+  font-weight: 400;
+}
+.cave-map div.weather ul li strong {
+  font-size: 2vw;
+}
 .cave-map div.weather p.txt {
   font-size: 1vw;
   margin: 1vh 0 0;
