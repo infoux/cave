@@ -200,6 +200,12 @@ a {
   text-decoration: none;
   color: #333;
 }
+a,
+button,
+input + label,
+input[type="button"] {
+  cursor: pointer;
+}
 /*font*/
 html {
   min-width: 320px;
