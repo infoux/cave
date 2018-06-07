@@ -1644,18 +1644,19 @@ body.screen section.tabdata div.cavedata div.scroll-data::-webkit-scrollbar-thum
   background: #555;
 }
 body.screen section.cctv {
-  padding: 0.2vw 0.4vh;
   font-size: 0;
+  padding: 0.2vw 0.4vh;
 }
-body.screen section.cctv div.video {
+body.screen section.cctv canvas {
   display: inline-block;
   position: relative;
-  width: 50%;
-  height: 50%;
-  padding: 0.2vw 0.4vh;
+  width: calc(50% - 0.4vw);
+  height: calc(50% - 0.4vh);
+  margin: 0.2vw 0.2vh;
+  background: #333;
   overflow: hidden;
 }
-body.screen section.cctv div.video.nosignal::before {
+body.screen section.cctv canvas.nosignal::before {
   content: "No Signal";
   background: #666;
   font-size: 1vw;
@@ -1670,7 +1671,7 @@ body.screen section.cctv div.video.nosignal::before {
   padding-top: 10vh;
   z-index: 100;
 }
-body.screen section.cctv div.video h2 {
+body.screen section.cctv canvas h2 {
   position: absolute;
   right: 0;
   top: 0;
@@ -1680,7 +1681,7 @@ body.screen section.cctv div.video h2 {
   font-weight: 400;
   background: rgba(0, 0, 0, 0.6);
 }
-body.screen section.cctv div.video video {
+body.screen section.cctv canvas video {
   width: 100%;
   height: auto;
 }

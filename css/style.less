@@ -2106,15 +2106,16 @@ body.screen {
 }
 
         &.cctv {
-            padding:0.2vw 0.4vh;
             .zero;
 
-            div.video {
+            padding:0.2vw 0.4vh;
+            canvas {
                 display:inline-block;
                 .relative;
-                width:50%;
-                height:50%;
-                padding:0.2vw 0.4vh;
+                width:calc(~"50% - 0.4vw");
+                height:calc(~"50% - 0.4vh");
+                margin:0.2vw 0.2vh;
+                background:#333;
                 .hidden;
 
 
