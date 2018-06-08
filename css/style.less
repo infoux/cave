@@ -2109,7 +2109,8 @@ body.screen {
             .zero;
 
             padding:0.2vw 0.4vh;
-            canvas {
+
+            div {
                 display:inline-block;
                 .relative;
                 width:calc(~"50% - 0.4vw");
@@ -2117,8 +2118,7 @@ body.screen {
                 margin:0.2vw 0.2vh;
                 background:#333;
                 .hidden;
-
-
+    
                 &.nosignal {
                     &::before {
                         content: "No Signal";
@@ -2144,13 +2144,26 @@ body.screen {
                     font-size: 1vw;
                     .normal;
                     background: rgba(0,0,0,0.6);
+
+                    a {
+                        i {
+                            color:#f1b000;
+                        }
+                    }
                 }
 
                 video {
                     width:100%;
                     height:auto;
                 }
+
+                canvas {
+                    width:100%;
+                    height:100%;
+
+                }
             }
+
         }
 
     }
