@@ -228,7 +228,7 @@ body.intro-en div.map ul li a {
   background: #2d1e08;
   color: #fff;
   border-radius: 0.4vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 body.intro-en div.map ul li a:hover {
   top: -0.2vh;
@@ -245,7 +245,7 @@ body.intro-en div.map ul li a:hover {
 body.intro-en div.map ul li a u {
   display: block;
   color: #F5EDC0;
-  font-size: 1vw;
+  font-size: 0.8vw;
   padding-top: 1vh;
   text-decoration: none;
 }
