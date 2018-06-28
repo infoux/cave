@@ -1,0 +1,330 @@
+// out: ./style-en.css, compress: false, sourceMap: false
+@white: #fff;
+
+/* mixin */
+.bold {
+    font-weight: 800;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.mapazero {
+    margin: 0;
+    padding: 0;
+}
+
+.zero {
+    font-size: 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.static {
+    position: static;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+/* mixin */
+.bold {
+    font-weight: 800;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.no-list {
+    list-style: none;
+}
+
+.mapazero {
+    margin: 0;
+    padding: 0;
+}
+
+.zero {
+    font-size: 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.static {
+    position: static;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.drop-shadow (@x:0, @y: 2px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+
+.ani(@time:0.1s) {
+    -webkit-transition: all @time ease;
+    -moz-transition: all @time ease;
+    -o-transition: all @time ease;
+    -ms-transition: all @time ease;
+    transition: all @time ease;
+}
+
+
+/* screen style */
+body.intro-en {
+    color:@white;
+    background:url("../images/intro-bg.jpg") no-repeat center / cover;
+
+
+    div.weather {
+        h1 {
+            .normal;
+            font-size:2vw;
+            .mapazero;
+
+
+            &::after {
+                content:"";
+                .block;
+                height:0.2vh;
+                width:100%;
+                background:@white;
+                margin:2.6vh 0;
+            }
+
+            small {
+                .block;
+                font-size:1vw;
+                padding-bottom:2vh;
+            }
+    
+            strong {
+                .normal;
+                .block;
+                margin:0 0 0.4vh;
+            }
+        }
+
+        .absolute;
+        left:4vw;
+        top:6vh;
+        font-size:0.3vw;
+
+        h2 {
+            font-size:1vw;
+
+            small {
+                .block;
+                margin:0.2vw 0 0 0;
+                font-size:0.6vw;
+            }
+        }
+        p.txt {
+            font-size:1vw;
+            margin:1vh 0 0;
+        }
+        p.temp {
+            font-size:1vw;
+            margin:0;
+
+            strong {
+                font-size:2.4vw;
+            }
+        }
+
+        i {
+            .absolute;
+            left:8vw;
+            top:18vh;
+            font-size:6vw;
+
+        }
+    }
+
+    div.map {
+        .absolute;
+        left:50%;
+        top:50%;
+        margin: -25vw 0 0 -25vw;
+        width:50vw;
+        height:50vw;
+        background:url("../images/full-map.png") center / 100% 100%;
+
+        &::after {
+            content:"";
+            .block;
+            .absolute;
+            right:-18vw;
+            bottom:0;
+            width:20vw;
+            height:20vw;
+            background:url("../images/intro-map.png") no-repeat center / 100% 100%;
+        }
+
+        ul {
+            .no-list;
+            .mapazero;
+
+            li {
+                .absolute;
+                left:50%;
+                top:50%;
+
+                &.cave1 {
+                    margin:-45% 0 0 -7%;
+                }
+
+                &.cave2 {
+                    margin:-35% 0 0 23%;
+                }
+
+                &.cave3 {
+                    margin:-33.4% 0 0 -6%;
+                }
+
+                &.cave4 {
+                    margin:-18.4% 0 0 -7%;
+                }
+
+                &.cave5 {
+                    margin:31% 0 0 -44%;
+                }
+
+
+
+                a {
+                    .block;
+                    .relative;
+                    top:0;
+                    padding:0.8vh 1vw;
+                    background:#2d1e08;
+                    color:@white;
+                    border-radius:0.4vw;
+                    font-size:1.2vw;
+
+                    &:hover {
+                        top:-0.2vh;
+                        background:#b06b08;
+                        .drop-shadow;
+                        .ani(0.4s);
+                    }
+
+                    u {
+                        .block;
+                        color:#F5EDC0;
+                        font-size:1vw;
+                        padding-top:1vh;
+                        text-decoration:none;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,251 @@
+/* mixin */
+.bold {
+  font-weight: 800;
+}
+.normal {
+  font-weight: 400;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.top {
+  vertical-align: top;
+}
+.middle {
+  vertical-align: middle;
+}
+.bottom {
+  vertical-align: bottom;
+}
+.hidden {
+  overflow: hidden;
+}
+.none {
+  display: none;
+}
+.no-list {
+  list-style: none;
+}
+.mapazero {
+  margin: 0;
+  padding: 0;
+}
+.zero {
+  font-size: 0;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.static {
+  position: static;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+/* mixin */
+.bold {
+  font-weight: 800;
+}
+.normal {
+  font-weight: 400;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.top {
+  vertical-align: top;
+}
+.middle {
+  vertical-align: middle;
+}
+.bottom {
+  vertical-align: bottom;
+}
+.hidden {
+  overflow: hidden;
+}
+.none {
+  display: none;
+}
+.no-list {
+  list-style: none;
+}
+.mapazero {
+  margin: 0;
+  padding: 0;
+}
+.zero {
+  font-size: 0;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.static {
+  position: static;
+}
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+/* screen style */
+body.intro-en {
+  color: #fff;
+  background: url("../images/intro-bg.jpg") no-repeat center / cover;
+}
+body.intro-en div.weather {
+  position: absolute;
+  left: 4vw;
+  top: 6vh;
+  font-size: 0.3vw;
+}
+body.intro-en div.weather h1 {
+  font-weight: 400;
+  font-size: 2vw;
+  margin: 0;
+  padding: 0;
+}
+body.intro-en div.weather h1::after {
+  content: "";
+  display: block;
+  height: 0.2vh;
+  width: 100%;
+  background: #fff;
+  margin: 2.6vh 0;
+}
+body.intro-en div.weather h1 small {
+  display: block;
+  font-size: 1vw;
+  padding-bottom: 2vh;
+}
+body.intro-en div.weather h1 strong {
+  font-weight: 400;
+  display: block;
+  margin: 0 0 0.4vh;
+}
+body.intro-en div.weather h2 {
+  font-size: 1vw;
+}
+body.intro-en div.weather h2 small {
+  display: block;
+  margin: 0.2vw 0 0 0;
+  font-size: 0.6vw;
+}
+body.intro-en div.weather p.txt {
+  font-size: 1vw;
+  margin: 1vh 0 0;
+}
+body.intro-en div.weather p.temp {
+  font-size: 1vw;
+  margin: 0;
+}
+body.intro-en div.weather p.temp strong {
+  font-size: 2.4vw;
+}
+body.intro-en div.weather i {
+  position: absolute;
+  left: 8vw;
+  top: 18vh;
+  font-size: 6vw;
+}
+body.intro-en div.map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -25vw 0 0 -25vw;
+  width: 50vw;
+  height: 50vw;
+  background: url("../images/full-map.png") center / 100% 100%;
+}
+body.intro-en div.map::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -18vw;
+  bottom: 0;
+  width: 20vw;
+  height: 20vw;
+  background: url("../images/intro-map.png") no-repeat center / 100% 100%;
+}
+body.intro-en div.map ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body.intro-en div.map ul li {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+body.intro-en div.map ul li.cave1 {
+  margin: -45% 0 0 -7%;
+}
+body.intro-en div.map ul li.cave2 {
+  margin: -35% 0 0 23%;
+}
+body.intro-en div.map ul li.cave3 {
+  margin: -33.4% 0 0 -6%;
+}
+body.intro-en div.map ul li.cave4 {
+  margin: -18.4% 0 0 -7%;
+}
+body.intro-en div.map ul li.cave5 {
+  margin: 31% 0 0 -44%;
+}
+body.intro-en div.map ul li a {
+  display: block;
+  position: relative;
+  top: 0;
+  padding: 0.8vh 1vw;
+  background: #2d1e08;
+  color: #fff;
+  border-radius: 0.4vw;
+  font-size: 1.2vw;
+}
+body.intro-en div.map ul li a:hover {
+  top: -0.2vh;
+  background: #b06b08;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+body.intro-en div.map ul li a u {
+  display: block;
+  color: #F5EDC0;
+  font-size: 1vw;
+  padding-top: 1vh;
+  text-decoration: none;
+}
